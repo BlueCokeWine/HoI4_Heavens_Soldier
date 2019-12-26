@@ -1,0 +1,223 @@
+﻿capital = 794 #Jeju Island
+
+oob = "FKR_1936"
+
+add_ideas = {
+	#laws
+	tot_economic_mobilisation
+	service_by_requirement
+	closed_economy
+}
+
+set_stability = 0.7
+set_war_support = 0.85
+set_fuel_ratio = 1.0
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	motorised_infantry = 1
+	transport = 1
+	future_infantry_equipment = 1
+	future_mechanized_equipment = 1
+	future_modern_tank = 1
+	future_modern_tank_aa = 1
+	future_modern_tank_artillery = 1
+	attack_heli = 1
+	transport_heli = 1
+	future_jet_multirole = 1
+	future_jet_CAS = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		mtg_transport = 1
+		future_light_hull = 1
+		future_cruiser_hull = 1
+		future_carrier_hull = 1
+		future_submarine_hull = 1
+		future_naval_module = 1
+	}
+	set_naval_oob = "FKR_1936_naval"
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		transport = 1
+		future_destroyer_legacy = 1
+		future_light_cruiser_legacy = 1
+		future_carrier_legacy = 1
+		future_submarine_legacy = 1
+	}
+	set_naval_oob = "FKR_1936_naval_legacy"
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	democratic = 70
+	fascism = 15
+	communism = 15
+}
+
+### Country Leader ###
+
+create_country_leader = {
+	name = "CV CDR 엄 현성"
+	desc = ""
+	picture = "gfx/leaders/FKR/Portrait_modern_admiral_eom_hyunsung.dds"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "CV CDR 엄 현성"
+	desc = ""
+	picture = "gfx/leaders/FKR/Portrait_modern_admiral_eom_hyunsung.dds"
+	expire = "1965.1.1"
+	ideology = oligarchism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Marine CDR 전 진구"
+	desc = ""
+	picture = "gfx/leaders/FKR/Portrait_modern_general_jeon_jingu.dds"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Marine CDR 전 진구"
+	desc = ""
+	picture = "gfx/leaders/FKR/Portrait_modern_general_jeon_jingu.dds"
+	expire = "1965.1.1"
+	ideology = rexism
+	traits = {
+		#
+	}
+}
+
+### General & Admiral ###
+
+create_corps_commander = {
+	name = "전 진구"
+	picture = "Portrait_modern_general_jeon_jingu.dds"
+	traits = { career_officer commando naval_invader invader_ii }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_navy_leader = {
+	name = "엄 현성"
+	picture = "Portrait_modern_admiral_eom_hyunsung.dds"
+	traits = { spotter superior_tactician air_controller }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 4
+	coordination_skill = 5
+}
+
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "세종대왕 급"
+		type = ship_hull_light_future_1
+		name_group = FKR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_future_1
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = light_ship_engine_future_1
+			fixed_ship_torpedo_slot = ship_torpedo_future_1
+			front_1_custom_slot = ship_missile_launcher_future_1
+			rear_1_custom_slot = ship_depth_charge_future_1
+		}
+		obsolete = no
+	}
+
+	create_equipment_variant = {
+		name = "이순신 급"
+		type = ship_hull_cruiser_future_1
+		name_group = FKR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_future_1
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = cruiser_ship_engine_future_1
+			fixed_ship_secondaries_slot = ship_secondaries_future_1
+			fixed_ship_armor_slot = ship_armor_cruiser_future_1
+			front_1_custom_slot = ship_missile_launcher_future_1
+			mid_1_custom_slot = ship_secondaries_future_1
+			mid_2_custom_slot = ship_secondaries_future_1
+			rear_2_custom_slot = ship_depth_charge_future_1
+		}
+		obsolete = no
+	}
+
+	create_equipment_variant = {
+		name = "광개토대왕 급"
+		type = ship_hull_carrier_future_1
+		name_group = FKR_CV_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_future_1
+			fixed_ship_radar_slot = ship_radar_future_1
+			fixed_ship_engine_slot = carrier_ship_engine_future_1
+			fixed_ship_secondaries_slot = empty
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			mid_2_custom_slot = ship_deck_space
+		}
+		obsolete = no
+	}
+
+	create_equipment_variant = {
+		name = "안창호 급"
+		type = ship_hull_submarine_future_1
+		name_group = FKR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_future_1 
+			fixed_ship_engine_slot = sub_ship_engine_future_1
+			front_1_custom_slot = ship_torpedo_sub_future_1
+			mid_1_custom_slot = ship_missile_launcher_future_1
+		}
+		obsolete = no
+	}
+
+}

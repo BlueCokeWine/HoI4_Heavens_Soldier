@@ -1,0 +1,177 @@
+spriteTypes = {
+	
+#region Ship Future Module
+
+	spriteType = {
+		name = "GFX_SMI_ship_light_battery_future_1"
+		textureFile = "gfx/interface/modules/light_battery_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_light_battery_future_2"
+		textureFile = "gfx/interface/modules/light_battery_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_missile_launcher_future_1"
+		textureFile = "gfx/interface/modules/missile_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_missile_launcher_future_2"
+		textureFile = "gfx/interface/modules/missile_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_future_1"
+		textureFile = "gfx/interface/modules/secondary_battery_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_secondaries_future_2"
+		textureFile = "gfx/interface/modules/secondary_battery_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_future_1"
+		textureFile = "gfx/interface/modules/anti_air_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_anti_air_future_2"
+		textureFile = "gfx/interface/modules/anti_air_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_future_1"
+		textureFile = "gfx/interface/modules/fire_control_system_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_future_2"
+		textureFile = "gfx/interface/modules/fire_control_system_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_radar_future_1"
+		textureFile = "gfx/interface/modules/radar_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_radar_future_2"
+		textureFile = "gfx/interface/modules/radar_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_light_ship_engine_future_1"
+		textureFile = "gfx/interface/modules/engine_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_light_ship_engine_future_2"
+		textureFile = "gfx/interface/modules/engine_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_sub_ship_engine_future_1"
+		textureFile = "gfx/interface/modules/engine_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_sub_ship_engine_future_2"
+		textureFile = "gfx/interface/modules/engine_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_sub_ship_engine_future_nuclear"
+		textureFile = "gfx/interface/modules/engine_icn_future_nuclear.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_engine_future_1"
+		textureFile = "gfx/interface/modules/engine_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_engine_future_2"
+		textureFile = "gfx/interface/modules/engine_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_cruiser_ship_engine_future_nuclear"
+		textureFile = "gfx/interface/modules/engine_icn_future_nuclear.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_engine_future_1"
+		textureFile = "gfx/interface/modules/engine_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_engine_future_2"
+		textureFile = "gfx/interface/modules/engine_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_carrier_ship_engine_future_nuclear"
+		textureFile = "gfx/interface/modules/engine_icn_future_nuclear.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_depth_charge_future_1"
+		textureFile = "gfx/interface/modules/depth_charge_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_depth_charge_future_2"
+		textureFile = "gfx/interface/modules/depth_charge_icn_future_re.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_ship_sonar_future_1"
+		textureFile = "gfx/interface/modules/sonar_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_sonar_future_2"
+		textureFile = "gfx/interface/modules/sonar_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_armor_cruiser_future_1"
+		textureFile = "gfx/interface/modules/armor_thin_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_armor_cruiser_future_2"
+		textureFile = "gfx/interface/modules/armor_thin_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_torpedo_future_1"
+		textureFile = "gfx/interface/modules/ship_torpedo_launcher_icn_future.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_torpedo_future_2"
+		textureFile = "gfx/interface/modules/ship_torpedo_launcher_icn_future_re.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_torpedo_sub_future_1"
+		textureFile = "gfx/interface/modules/sub_torpedo_launcher_icn_future.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_SMI_ship_torpedo_sub_future_2"
+		textureFile = "gfx/interface/modules/sub_torpedo_launcher_icn_future_re.dds"
+	}
+
+#endregion
+	
+}
+
+
+
+
+

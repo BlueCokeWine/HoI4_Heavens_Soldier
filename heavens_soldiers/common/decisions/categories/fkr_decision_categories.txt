@@ -1,0 +1,262 @@
+###############################
+# CUSTOM
+###############################
+FKR_KOR_hiding = {
+	icon = generic_crisis
+	priority = { base = 15 }
+	allowed = {
+		original_tag = FKR
+	}
+	visible = {
+		has_country_flag = KOR_suspicious
+		not = {
+			has_war_with = KOR
+		}
+	}
+}
+
+FKR_war_preparations = {
+	
+	icon = generic_independence
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		has_completed_focus = FKR_support_motherland
+	}
+
+}
+
+FKR_future_tech_research_land = {
+	icon = generic_research
+
+	picture = GFX_decision_cat_FKR_future_tech_research
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = FKR_send_researcher
+			has_completed_focus = FKR_army_doc_team
+		}
+	}
+}
+
+FKR_future_tech_research_air = {
+	icon = generic_research
+
+	picture = GFX_decision_cat_FKR_future_tech_research
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = FKR_send_researcher
+			has_completed_focus = FKR_airforce_team
+		}
+	}
+}
+
+FKR_future_tech_research_navy = {
+	icon = generic_research
+
+	picture = GFX_decision_cat_FKR_future_tech_research
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = FKR_send_researcher
+			has_completed_focus = FKR_navy_doc_team
+		}
+	}
+}
+
+FKR_strat_ops_command = {
+
+	icon = category_ger_military_buildup
+
+	picture = GFX_decision_cat_FKR_cat_strat_ops
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		has_completed_focus = FKR_doctrine_department
+	}
+	
+}
+
+FKR_hire_royal_house_field_marshal = {
+
+	icon = army_support
+
+	allowed = {
+		original_tag = FKR
+	}
+}
+
+FKR_ancient_korean_literature_category = {
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_FKR_ancient_korean_literature_category
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		has_completed_focus = FKR_ancient_korean_literature
+	}
+}
+
+FKR_unified_earth_government_category = {
+	icon = generic_formable_nations
+
+	picture = GFX_decision_cat_FKR_unified_earth_government
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		OR = {
+			has_completed_focus = FKR_united_earth_gov
+			has_completed_focus = FKR_time_to_reaching_top
+		}
+	}
+}
+
+FKR_asia_guardian = {
+
+	icon = fkr_asia_guardian
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		is_puppet = no
+		has_completed_focus = FKR_req_colony_independent
+	}
+}
+
+FKR_red_road_of_asia_cat = {
+
+	icon = generic_communism
+
+	allowed = {
+		original_tag = FKR
+	}
+
+	visible = {
+		is_puppet = no
+		has_completed_focus = FKR_red_road_of_asia
+	}
+}
+
+FKR_easter_mission = {
+	icon = generic
+
+	allowed = {
+		original_tag = FKR
+	}
+}
+
+###############################
+# ICONS
+###############################
+
+# aluminium
+# border_war
+# cat_generic_arabia
+# cat_generic_austria_hungary
+# cat_generic_baltic_federation
+# cat_generic_byzantine_empire
+# cat_generic_commonwealth
+# cat_generic_european_union
+# cat_generic_gran_colombia
+# cat_generic_hre
+# cat_generic_majapahit_empire
+# cat_generic_mefo_bills
+# cat_generic_mutapa
+# cat_generic_nordic_league
+# cat_generic_ottoman_empire
+# cat_generic_persian_empire
+# cat_generic_rattanakosin_kingdom
+# cat_generic_roman_empire
+# cat_generic_scandinavia
+# cat_generic_united_central_america
+# cat_generic_united_netherlands
+# cat_picture_chi_infiltration
+# cat_picture_chi_political_support
+# cat_picture_generic_border_conflicts
+# cat_picture_ger_case_anton
+# category_army_reform
+# category_border_conflicts
+# category_border_war
+# category_generic
+# category_generic_communism
+# category_generic_crisis
+# category_generic_democracy
+# category_generic_economy
+# category_generic_fascism
+# category_generic_formable_nations
+# category_generic_independence
+# category_generic_industry
+# category_generic_monarchism
+# category_generic_political_actions
+# category_generic_propaganda
+# category_generic_prospect_for_resources
+# category_ger_mefo_bills
+# category_ger_military_buildup
+# category_ger_reichskommissariats
+# category_infiltration
+# category_jap_intervene_in_china
+# category_jap_pacific_guardian
+# category_jap_southern_expansion
+# category_military_operation
+# category_power_struggle
+# category_saf_anti_colonialist_crusade
+# category_sov_great_patriotic_war
+# chromium
+# generic_air
+# generic_army_support
+# generic_break_treaty
+# generic_civil_support
+# generic_construction
+# generic_decision
+# generic_form_nation
+# generic_ignite_civil_war
+# generic_independence
+# generic_industry
+# generic_nationalism
+# generic_naval
+# generic_operation
+# generic_political_discourse
+# generic_prepare_civil_war
+# generic_research
+# generic_scorched_earth
+# generic_tank
+# ger_mefo_bills
+# ger_military_buildup
+# ger_reichskommissariats
+# infiltrate_state
+# jap_conquer_china
+# jap_pacific_guardian
+# oil
+# oppression
+# revolt
+# rubber
+# steel
+# tungsten
+# unknown

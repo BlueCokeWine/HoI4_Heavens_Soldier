@@ -1,0 +1,64 @@
+﻿### Names generation for aces ###
+# Surnames can be male/female dependent or general. Fe. in Polish some surnames has different endings depending on the gender.
+# Names and Surnames are randomly picked and will sometimes repeat, but will never repeat in combinations for example there will never be generated another "John Smith".
+# Assigning the callsign is random - may be assigned or not. If we use the callsign, it will never be assigned to anyone again. Callsigns are not obligatory to script.
+# Picking up a gender is random, and is influenced by the amount of names scripted.
+
+default = {
+	male = {
+		names = { "John" "Bob" "Lucas" "Marcus" "Alexander" "Alex" "Peter" "Jonas" "Jim" "Johannes"}
+		surnames = { }
+		callsigns = { }
+	}
+	#female = {
+	#	names = { "Juliette" "Anna" }
+	#	surnames = { }
+	#	callsigns = { "Queen Of The Sky" "The Red Princess" }
+	#}
+	surnames = { "Smith" "Jones" "Taylor" "Brown" "Williams" "Wilson" "Evans" "Walker" "White" "Roberts" }
+	callsigns = { "Easy Kill" "The Lightning" "The Devil" "Grasshopper" "Handsome" "Moose" "Mouse" "Pebbles" "Sunshine" Demon}
+}
+
+KOR = {
+	male = {
+		names = {
+			Woosung Kyungjun Kiyoung Namgil Dongwon Seojun Seokwoo Sungmin Sungjin Seungwon
+			Shinil Indeok Euntak Jungwoo Jiseop Jihwan Taeoh Haneul Kyungpyo Sewon Inbeom Juwon
+			Changseok Hyeongjin Dowon Dongnyeong Siyang Jungwook Heesung Sangwoo Sungdeok
+			Ohjung Yongwoon Taewon Haesung Haeyo Hyeogsu Hyunsang
+		}
+	}
+	female = {
+		
+	}
+	surnames = {
+		Kim Kim Kim Kim Kim Kim Kim Kim Kim Kim Lee Lee Lee Lee Lee Lee Lee 
+		Park Park Park Park Choi Choi Jeong Jeong Kang Jo Yoon Jang Im Han Oh 
+		Seo Shin Kwon Hwang Ahn Song
+ 	}
+	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Vampire "War Lord" }
+}
+ 
+FKR = {
+	male = {
+		names = {
+			김 김 김 김 김 김 김 김 김 김 이 이 이 이 이 이 이 
+			박 박 박 박 최 최 정 정 강 조 윤 장 임 한 오 
+			서 신 권 황 안 송
+		}
+	}
+	female = {
+		names = {
+			
+		}
+	}
+	surnames = {
+		우성 경준 기영 남일 동원 서준 석우 성민 성진 승원
+		신일 인덕 은탁 정우 지섭 지환 태오 하늘 경표 세원 인범 주원
+		창석 형진 도원 동녕 시양 정욱 희성 상우 성덕
+		오중 용운 태원 해성 해요 형수 현상
+ 	}
+	callsigns = { 
+		'팔공' '막강' '기라성' '화랑' '번개' '박쥐' '비창' '번개' '비룡' '악마' '마귀' '시바스' '트라이 리'
+	}
+}

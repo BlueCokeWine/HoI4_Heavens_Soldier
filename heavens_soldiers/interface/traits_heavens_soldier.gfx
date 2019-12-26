@@ -1,0 +1,9 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_FKR_independent_army"
+		texturefile = "gfx/interface/traits/personal/trait_independent_army.dds"
+	}	
+	
+}
+

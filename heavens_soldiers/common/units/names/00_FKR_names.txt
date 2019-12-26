@@ -1,0 +1,162 @@
+﻿FKR = {
+	submarine = {
+		prefix = "KNS"
+		generic = { "잠수함" }
+		unique = {
+			 
+		}
+	}
+	destroyer = {
+		prefix = "KNS"
+		generic = { 
+			"구축함"
+		}
+		unique = {
+			
+		}
+	}
+	light_cruiser = {
+		prefix = "KNS"
+		generic = { "경순양함" }
+		unique = {
+			
+
+		}
+	}
+	heavy_cruiser = {
+		prefix = "KNS"
+		generic = { "중순양함" }
+		unique = {
+			
+ 
+		}
+	}
+	battle_cruiser = {
+		prefix = "KNS"
+		generic = { "순양전함" }
+		unique = {
+		
+		}
+	}
+	battleship = {
+		prefix = "KNS"
+		generic = { "전함" }
+		unique = {
+			
+		}
+	}
+	carrier = {
+		prefix = "KNS"
+		generic = { "항공모함" }
+		unique = {
+
+		}
+	}
+
+	air_wing_names_template = AIR_WING_NAME_FKR_FALLBACK
+
+	fighter_equipment = {
+		prefix = ""
+		generic = { "전투 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		
+		}	
+	}
+
+	jet_fighter_equipment = {
+		prefix = "한국 공군"
+		generic = { "전투 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	heavy_fighter_equipment = {
+		prefix = "한국 공군"
+		generic = { "호위 전투 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	CAS_equipment = {
+		prefix = "한국 공군"
+		generic = { "지상지원 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_fighter_equipment = {
+		prefix = "한국 해군"
+		generic = { "전투 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	cv_CAS_equipment = {
+		prefix = "한국 해군"
+		generic = { "지상지원 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+	cv_nav_bomber_equipment = {
+		prefix = "한국 해군"
+		generic = { "뇌격 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	tac_bomber_equipment = {
+		prefix = "한국 공군"
+		generic = { "전술 폭격 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_tac_bomber_equipment = {
+		prefix = "한국 공군"
+		generic = { "전술 폭격 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	nav_bomber_equipment = {
+		prefix = "한국 공군"
+		generic = { "뇌격 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	strat_bomber_equipment = {
+		prefix = "한국 공군"
+		generic = { "전략 폭격 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	jet_strat_bomber_equipment = {
+		prefix = "한국 공군"
+		generic = { "전략 폭격 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+
+	transport_plane_equipment = {
+		prefix = "한국 공군"
+		generic = { "공수 비행단" }
+		generic_pattern = AIR_WING_NAME_FKR_GENERIC
+		unique = {
+		}	
+	}
+	
+}

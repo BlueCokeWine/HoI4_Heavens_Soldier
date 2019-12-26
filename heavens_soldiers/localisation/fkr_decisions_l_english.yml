@@ -1,0 +1,167 @@
+﻿l_english:
+
+# CATEGORIES
+FKR_KOR_hiding: "옛 한국의 소굴 (£pol_power [?Root.FKR_hiding_cost_total|H0])"
+FKR_war_preparations: "독립운동가의 습격"
+FKR_hire_royal_house_field_marshal: "왕족을 장군으로 고용"
+FKR_ancient_korean_literature_category: "고대 한국의 기록"
+FKR_unified_earth_government_category: "단일 이념, 단일 정부, 하나된 지구"
+#FKR_future_tech_research: "미래 기술 개발"
+FKR_future_tech_research_land: "미래 육군 기술 개발"
+FKR_future_tech_research_air: "미래 공군 기술 개발"
+FKR_future_tech_research_navy: "미래 해군 기술 개발"
+FKR_strat_ops_command: "전략 작전 사령부"
+FKR_asia_guardian: "아시아의 수호자"
+FKR_red_road_of_asia_cat: "아시아의 붉은 길"
+FKR_easter_mission: "의미불명의 소문"
+
+FKR_KOR_hiding_desc: "우리는 한반도를 지배하고 있는 [KOR.GetNameDef]와 국경을 접하고 있습니다. 그들이 우리의 존재를 충분히 인식하게 된다면 그들이 우리를 파괴할 것이라는 것을 부인할 수 없습니다. 다행히도 관료주의, 내분, 무능한 지도자에 의해 약화된 [KOR.GetNameDef]는 눈이 멀어 있습니다. 우리는 적절한 선택으로 우리의 계획을 충분히 밝힐 수 있을 만큼 그리고 충분히 강해지기까지 우리의 활동을 은폐 시킬 수 있습니다. 그러나 우리는 그들의 그림자에서 영원히 숨어 있을 수는 없을 것입니다. 시간이 지남에 따라 우리 자신을 숨기는 것이 점점 더 어려워질 것입니다."
+FKR_ancient_korean_literature_category_desc: "고대 한국의 한 문헌에 따르면 한민족은 예로부터 동서로 한반도부터 메소포타미아까지, 남북으로 시베리아 전역, 인도 북부 및 중앙아시아까지 달하는, 즉 쉽게 말해서 유라시아 대륙 대부분을 지배한 사상 최대의 대제국이었다고 합니다."
+FKR_unified_earth_government_category_desc: "더 이상 우리를 견제할 만한 열강은 지구상에 존재 하지 않습니다. 우리는 인류 통합이라는 위대한 업적을 곧 이룩할 수 있을 것입니다!"
+#FKR_future_tech_research_desc: "현대 기술도 언젠가는 도태될 것입니다. 우리는 미래의 기술에 집중 투자 함으로써 확실한 기술적 우위를 누리게 될것입니다."
+FKR_strat_ops_command_desc: "우리는 전쟁에서 승리하기 위해 전략적으로 전쟁에 접근해야할 필요가 있습니다.\n 겨자 가스탄: [?Root.mustard_gas_cap]"
+FKR_future_tech_research_land_desc: "결국 최후의 깃발을 꽂는 건 보병이라고!"
+FKR_future_tech_research_air_desc: "공군만으로 전쟁을 이길순 없지만, 공군이 없다면 전쟁을 이길수 없습니다."
+FKR_future_tech_research_navy_desc: "확실한 것은 결정적인 해군전력이 없으면 아무것도 할 수 없지만, 전력이 갖춰지면 모든 명예롭고 영광스러운 일들을 해낼 수 있습니다."
+
+# DECISIONS
+
+#################################
+# HIDING FROM THE Korea
+#################################
+
+FKR_hide_activity:0 "제주에서의 활동 은폐하기"
+FKR_hide_activity_desc:0 "옛 국가의 정보 수집력은 매우 떨어지지만 시간이 지남에 따라 그들로부터 활동을 은폐하기 위해 점점 더 많은 노력을 기울여야 할 것입니다."
+FKR_hide_activity_days_tt:0 "§Y한국§!으로부터 §Y90 일§!간 은폐"
+FKR_hide_activity_bonus_tt:0 " + [?Root.days_mission_timeout@FKR_hide_activity|H0] §G추가§! 일수"
+FKR_hide_activity_crisis:0 "§R우리는 위기에 직면할 것입니다!§!\n"
+
+# CRISIS
+KOR_crisis:0 "§R은폐 위기§!"
+KOR_crisis_flag:0 "§R곧 우리의 은폐가 발각될 것입니다!§!"
+
+# War Preparations
+FKR_prepare_to_seize_arms:0 "한반도 내의 무기고 습격 준비"
+FKR_prepare_to_seize_arms_desc:0 "나라 곳곳에 설치된 무기고와 보급창은 경비가 허술합니다. 잘 조율된 공격으로 인명 피해는 최소화할 수 있으며, 무기를 손에 넣고 탄약과 보급품을 무기고에서 빼앗을 수 있습니다. 더 많은 시간과 자원이 주어진다면 더 많은 무기고를 습격할 수 있을 것입니다."
+FKR_seize_arms:0 "무기고 습격 개시"
+FKR_seize_arms_desc:0 "거침없이 쳐라! 대한 독립 만세!"
+FKR_can_prepare_more_tt:0 "향후 추가적인 무기고의 습격을 위한 계획이 아직 준비 중입니다.\n"
+
+FKR_national_uprising:0 "국가 봉기"
+FKR_national_uprising_desc:0 "기술적인 우위에도 불구하고 양적으로 적을 상대하기에 부족합니다. 우리는 한반도의 우리 국민들을 설득함으로써 이 전쟁을 좀 더 유리한 방향으로 이끌 수 있을 것입니다.\n"
+
+# National Form Hwandan
+FKR_form_hwandan_empire:0 "환단국의 실현"
+FKR_form_hwandan_empire_tt:0 "이 말도 안되는 대제국을 자칭하기 위해 우리는 이에 걸맞는 거대한 영토를 보유해야할 것입니다."
+FKR_add_core_at_manchu:0 "만주의 영토 수복"
+FKR_add_core_at_manchu_desc:0 "만주는 우리 고대 영토의 일부였습니다."
+FKR_add_core_at_mongol:0 "몽골의 영토 수복"
+FKR_add_core_at_mongol_desc:0 "몽골은 우리 고대 영토의 일부였습니다."
+FKR_add_core_at_japan:0 "일본의 영토 수복"
+FKR_add_core_at_japan_desc:0 "일본은 우리 고대 영토의 일부였습니다."
+FKR_add_core_at_china:0 "중국의 영토 수복"
+FKR_add_core_at_china_desc:0 "중국은 우리 고대 영토의 일부였습니다."
+FKR_add_core_at_siberia:0 "시베리아의 영토 수복"
+FKR_add_core_at_siberia_desc:0 "시베리아는 우리 고대 영토의 일부였습니다."
+FKR_add_core_at_tibet:0 "티베트의 영토 수복"
+FKR_add_core_at_tibet_desc:0 "티베트는 우리 고대 영토의 일부였습니다."
+FKR_add_core_at_india_indochina:0 "인도와 인도차이나 영토 수복"
+FKR_add_core_at_india_indochina_desc:0 "일부 인도와 인도차이나의 땅은 우리 고대 영토의 일부였습니다."
+FKR_add_core_at_iran_afgan:0 "이란과 아프간 영토 수복"
+FKR_add_core_at_iran_afgan_desc:0 "일부 이란과 아프간의 땅은 우리 고대 영토의 일부였습니다."
+
+# National Form Unified Earth Government
+FKR_prepare_for_unified_earth:0 "하나된 정부를 위한 준비"
+FKR_prepare_for_unified_earth_desc:0 "연합 정부 구성을 위해서 우리는 모든 국가를 정복해야 합니다."
+FKR_the_unified_earth_government:0 "지구 연합 정부의 실현"
+FKR_the_unified_earth_government_desc:0 "지구를 정복한다는 것은 결코 쉬운 일은 아닙니다만, 그 끝은 원대할 것입니다."
+FKR_time_to_reaching_top_decision:0 "정상에 올라설 시간"
+FKR_time_to_reaching_top_decision_desc:0 "더 이상 우리를 견제할 국가는 없습니다."
+
+# Future Tech Research (Land)
+FKR_future_research_processing:0 "미래 장비를 개발중"
+FKR_reserch_future_infantry_equipment:0 "미래 보병 장비 개발"
+FKR_reserch_future_mechanized_equipment:0 "미래 기계화 장비 개발"
+FKR_reserch_future_armor_equipment:0 "미래 전차 장비 개발"
+FKR_reserch_future_derivative_armor_equipment:0 "미래 파생형 전차 장비 개발"
+FKR_reserch_future_transport_heli_equipment:0 "미래 수송 헬리콥터 개발"
+FKR_reserch_future_attack_heli_equipment:0 "미래 공격 헬리콥터 개발"
+FKR_reserch_future_anti_air_equipment:0 "미래 대공 장비 개발"
+FKR_reserch_future_anti_tank_equipment:0 "미래 대전차 장비 개발"
+FKR_reserch_future_mlrs_equipment:0 "미래 다연장 로켓 장비 개발"
+
+# Future Tech Research (Air)
+FKR_reserch_future_fighter_equipment:0 "미래 전투기 개발"
+FKR_reserch_future_cas_equipment:0 "미래 근접항공지원기 개발"
+FKR_reserch_future_strat_bomber_equipment:0 "미래 전략 폭격기 개발"
+
+# Future Tech Research (Navy)
+FKR_reserch_future_destroyer_legacy_equipment:0 "미래 구축함 개발"
+FKR_reserch_future_light_cruiser_legacy_equipment:0 "미래 경순양함 개발"
+FKR_reserch_future_carrier_legacy_equipment:0 "미래 항공모함 개발"
+FKR_reserch_future_submarine_legacy_equipment:0 "미래 잠수함 개발"
+
+FKR_reserch_future_light_hull_equipment:0 "미래 구축함 선체 개발"
+FKR_reserch_future_cruiser_hull_equipment:0 "미래 순양함 선체 개발"
+FKR_reserch_future_carrier_hull_equipment:0 "미래 항공모함 선체 개발"
+FKR_reserch_future_submarine_hull_equipment:0 "미래 잠수함 선체 개발"
+
+FKR_reserch_future_module_light_battery_equipment:0 "미래 소형 주포 개발"
+FKR_reserch_future_module_missile_launcher_equipment:0 "미래 대함 미사일 개발"
+FKR_reserch_future_module_secondaries_equipment:0 "미래 부포 개발"
+FKR_reserch_future_module_fc_radar_equipment:0 "미래 사격통제 & 레이더 개발"
+FKR_reserch_future_module_nuclear_engine_equipment:0 "함선용 원자로 엔진 개발"
+FKR_reserch_future_module_depth_charge_equipment:0 "미래 대잠 헬리콥터 개발"
+FKR_reserch_future_module_naval_armor_equipment:0 "미래 함선 장갑 개발"
+FKR_reserch_future_module_torpedo_equipment:0 "미래 어뢰 발사관 개발"
+
+# FKR_strat_ops_command
+FKR_add_army_doc_mobile_warfare:0 "기동전 교리 추가 개발"
+FKR_add_army_doc_superior_firepower:0 "압도적인 화력 교리 추가 개발"
+FKR_add_army_doc_grand_battle:0 "대전략 교리 추가 개발"
+FKR_add_army_doc_mass_assault:0 "대규모 돌격 교리 추가 개발"
+FKR_add_navy_doc_grand_battlefleet:0 "대 함대 교리 추가 개발"
+FKR_add_navy_doc_wolfpacks:0 "늑대 떼 교리 추가 개발"
+FKR_add_navy_doc_base_strike:0 "기지 타격 교리 추가 개발"
+FKR_add_air_doc_air_superiority:0 "제공권 교리 추가 개발"
+FKR_add_air_doc_direct_ground_support:0 "지상 지원 교리 추가 개발"
+FKR_add_air_doc_mass_destruction:0 "대량 파괴 교리 추가 개발"
+FKR_develop_mustartd_gas:0 "겨자 가스 개발"
+FKR_make_mustard_gas:0 "겨자 가스탄 생산"
+FKR_using_mustard_gas:0 "겨자 가스탄 사용"
+FKR_can_use_murstartd_gas:0 "겨자 가스 개발이 완료됨"
+FKR_aleady_use_mustard_gas:0 "이미 겨자 가스탄을 사용중입니다."
+
+# Prospect for resources
+FKR_develop_sinuiju_oil_deposits:0 "신의주 유전 지대 개발"
+FKR_develop_sector_7_oil_deposits:0 "7광구 유전 지대 개발"
+
+# Hire royal house general
+FKR_hire_lee_eun:0 "이은을 원수로 고용"
+FKR_hire_lee_kang:0 "이강을 원수로 고용"
+FKR_hire_lee_woo:0 "이우를 원수로 고용"
+FKR_hire_lee_geon:0 "이건을 대장으로 고용"
+
+FKR_guardian_of_INS:0 "인도네시아 관할권 양도"
+FKR_guardian_of_MAL:0 "말레이 관할권 양도"
+FKR_guardian_of_indochina:0 "인도차이나 관할권 양도"
+
+FKR_puppet_ins:0 "인도네시아 괴뢰화"
+FKR_puppet_mal:0 "말레이시아 괴뢰화"
+FKR_puppet_raj:0 "인도 괴뢰화"
+FKR_puppet_tur:0 "터키 괴뢰화"
+FKR_puppet_afg:0 "아프가니스탄 괴뢰화"
+FKR_puppet_per:0 "이란 괴뢰화"
+FKR_puppet_irq:0 "이라크 괴뢰화"
+FKR_puppet_sau:0 "사우디아라비아 괴뢰화"
+FKR_puppet_sia:0 "시암 괴뢰화"
+
+# Easter Egg
+FKR_find_japanese_independence_person:0 "일본인 출신 독립군"
+FKR_find_japanese_independence_person_tt:0 "무슨 일이 일어날까요?"
+FKR_find_civilian_sibas:0 "렌야의 추적"
+FKR_find_civilian_sibas_tt:0 "우리는 누구를 발견할 수 있을까요?"
+FKR_find_civilian_try_re:0 "또 다른 민간인"
+FKR_find_civilian_try_re_tt:0 "어떤 사건이 일어날지 아무도 모릅니다."
+FKR_find_civilian_uralsky:0 "또 다른 민간인"
+FKR_find_civilian_yong_nom:0 "또 다른 민간인"

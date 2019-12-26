@@ -1,0 +1,18 @@
+spriteTypes = {	
+	
+	spriteType = {
+		name = "GFX_autonomy_fkr_imperial_principality_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_principality.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_fkr_imperial_tribute_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_tribute.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_fkr_imperial_vassal_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_vassal.dds"
+	}
+	
+}

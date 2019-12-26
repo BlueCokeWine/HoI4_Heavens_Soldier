@@ -1,0 +1,241 @@
+ideas = {
+
+	country = {
+		KOR_movement_of_independence_fighters = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = KOR
+			}
+
+			picture = generic_intel_bonus
+	
+			modifier = {
+				autonomy_gain = 1
+			}
+		}
+
+		KOR_korea_japan_combined_treaty = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = KOR
+			}
+
+			picture = generic_intel_bonus
+	
+			modifier = {
+				war_support_weekly = -0.01
+				stability_weekly = -0.01
+				mobilization_speed = -0.25
+				conscription_factor = -0.75
+			}
+		}
+	}
+	
+	
+	political_advisor = {
+		arita_hachiro = {
+			picture = kor_advisor_arita_hachiro
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				
+			}
+			traits = { compassionate_gentleman }
+		}
+		lee_kiyong = {
+			picture = kor_advisor_lee_kiyong
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				
+			}
+			traits = { silent_workhorse }
+		}
+		minami_jiro = {
+			picture = kor_advisor_minami_jiro
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				
+			}
+			traits = { fascist_demagogue }
+		}
+		yoon_deokyoung = {
+			picture = kor_advisor_yoon_deokyoung
+			allowed = {
+				original_tag = KOR
+			}
+			available = {
+				
+			}
+			traits = { prince_of_terror }
+		}
+	}
+		
+	# MILITARY
+	theorist = {
+		itagaki_seisiro = {
+			picture = kor_theorist_itagaki_seisiro
+			allowed = {
+				original_tag = KOR
+			}
+			research_bonus = {
+				land_doctrine = 0.7
+			}
+			traits = { military_theorist }
+		}
+	}	
+	army_chief = {
+		kim_seokwon_kor = {
+			picture = kor_armychief_kim_seokwon
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { army_chief_old_guard }
+		}
+	}
+	navy_chief = {
+		saito_makoto = {
+			picture = kor_navychief_saito_makoto
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { navy_chief_old_guard }
+		}
+	}
+	air_chief = {
+		umejeu_yosijiro = {
+			picture = kor_airchief_umejeu_yosijiro
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { air_chief_old_guard }
+		}
+	}	
+	high_command = {
+		shibusawa_eichi = {
+			picture = kor_highcommand_shibusawa_eichi
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { army_logistics_1 }
+		}
+	}
+		
+	# TECHNOLOGY
+	naval_manufacturer = {
+		designer = yes
+
+		dongyangcheoksik_naval = {
+			picture = kor_company_dongyangcheoksik
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { naval_manufacturer }
+
+			equipment_bonus = {
+				# 
+			}
+		}
+	}
+	
+	aircraft_manufacturer = {
+		designer = yes
+
+		dongyangcheoksik_aircraft = {
+			picture = kor_company_dongyangcheoksik
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer }
+
+			equipment_bonus = {
+				# 
+			}
+		}
+	}
+	
+	
+	industrial_concern = {
+		dongyangcheoksik_industrial = {
+
+			picture = kor_company_dongyangcheoksik
+
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				industry = 0.5
+				synth_resources = 0.10
+			}
+			
+			traits = { refinery_concern }
+		}
+	}
+	
+	materiel_manufacturer = {
+		designer = yes
+		dongyangcheoksik_materiel = {
+			picture = kor_company_dongyangcheoksik
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+
+			equipment_bonus = {
+				# 
+			}
+		}
+	}
+	
+	
+	tank_manufacturer = {
+		designer = yes
+
+		dongyangcheoksik_tank = {
+			picture = kor_company_dongyangcheoksik
+			allowed = {
+				original_tag = KOR
+			}
+			
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { tank_manufacturer }
+
+			equipment_bonus = {
+				# 
+			}
+		}
+	}
+	
+	
+}

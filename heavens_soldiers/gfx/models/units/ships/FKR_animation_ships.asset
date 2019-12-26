@@ -1,0 +1,40 @@
+animation = {
+	name = "FKR_light_cruiser_future_idle_animation"
+	file = "FKR_light_cruiser_future_idle.anim"
+}
+animation = {
+	name = "FKR_light_cruiser_future_defend_animation"
+	file = "FKR_light_cruiser_future_defend.anim"
+}
+animation = {
+	name = "FKR_light_cruiser_future_death_animation"
+	file = "FKR_light_cruiser_future_death.anim"
+}
+animation = {
+	name = "FKR_light_cruiser_future_combat_idle_animation"
+	file = "FKR_light_cruiser_future_combat_idle.anim"
+}
+animation = {
+	name = "FKR_light_cruiser_future_attack_animation"
+	file = "FKR_light_cruiser_future_attack.anim"
+}
+animation = {
+	name = "FKR_destroyer_future_idle_animation"
+	file = "FKR_destroyer_future_idle.anim"
+}
+animation = {
+	name = "FKR_destroyer_future_defend_animation"
+	file = "FKR_destroyer_future_defend.anim"
+}
+animation = {
+	name = "FKR_destroyer_future_death_animation"
+	file = "FKR_destroyer_future_death.anim"
+}
+animation = {
+	name = "FKR_destroyer_future_combat_idle_animation"
+	file = "FKR_destroyer_future_combat_idle.anim"
+}
+animation = {
+	name = "FKR_destroyer_future_attack_animation"
+	file = "FKR_destroyer_future_attack.anim"
+}

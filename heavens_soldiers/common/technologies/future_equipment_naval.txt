@@ -1,0 +1,414 @@
+technologies = {
+
+	### Expensive Ship Hull & Modules ###
+
+	future_destroyer_legacy = {
+		enable_equipments = { 
+			destroyer_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	future_light_hull = {
+		enable_equipments = { 
+			ship_hull_light_future_1
+		}
+
+		enable_equipment_modules = {
+			light_ship_engine_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	### ###
+
+	future_light_cruiser_legacy = {
+		enable_equipments = { 
+			light_cruiser_future_1
+		}
+		
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	future_cruiser_hull = {
+		enable_equipments = { 
+			ship_hull_cruiser_future_1
+		}
+
+		enable_equipment_modules = {
+			cruiser_ship_engine_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	### ###
+
+	future_carrier_legacy = {
+		enable_equipments = { 
+			carrier_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	future_carrier_hull = {
+		enable_equipments = { 
+			ship_hull_carrier_future_1
+		}
+
+		enable_equipment_modules = {
+			carrier_ship_engine_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	### ###
+
+	future_submarine_legacy = {
+
+		enable_equipments = { 
+			submarine_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	future_submarine_hull = {
+		enable_equipments = { 
+			ship_hull_submarine_future_1
+		}
+
+		enable_equipment_modules = {
+			sub_ship_engine_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	future_naval_module = {
+		enable_equipment_modules = {
+			ship_light_battery_future_1
+			ship_missile_launcher_future_1
+			ship_secondaries_future_1
+			ship_anti_air_future_1
+			ship_fire_control_system_future_1
+			ship_radar_future_1
+			light_ship_engine_future_1
+			sub_ship_engine_future_1
+			cruiser_ship_engine_future_1
+			carrier_ship_engine_future_1
+			ship_depth_charge_future_1
+			ship_sonar_future_1
+			ship_armor_cruiser_future_1
+			ship_torpedo_future_1
+			ship_torpedo_sub_future_1
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	### Redesigned Naval Hull & Modules ###
+
+	redesigned_future_destroyer_legacy = {
+		enable_equipments = { 
+			destroyer_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_light_hull = {
+		enable_equipments = { 
+			ship_hull_light_future_2
+		}
+
+		enable_equipment_modules = {
+			light_ship_engine_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	### ###
+
+	redesigned_future_light_cruiser_legacy = {
+		enable_equipments = { 
+			light_cruiser_future_2
+		}
+		
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_cruiser_hull = {
+		enable_equipments = { 
+			ship_hull_cruiser_future_2
+		}
+
+		enable_equipment_modules = {
+			cruiser_ship_engine_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	### ###
+
+	redesigned_future_carrier_legacy = {
+		enable_equipments = { 
+			carrier_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_carrier_hull = {
+		enable_equipments = { 
+			ship_hull_carrier_future_2
+		}
+
+		enable_equipment_modules = {
+			carrier_ship_engine_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	### ###
+
+	redesigned_future_submarine_legacy = {
+
+		enable_equipments = { 
+			submarine_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_submarine_hull = {
+		enable_equipments = { 
+			ship_hull_submarine_future_2
+		}
+
+		enable_equipment_modules = {
+			sub_ship_engine_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+
+
+	### Redesigned Future Naval Modules ###
+
+	redesigned_future_light_battery = {
+		enable_equipment_modules = {
+			ship_light_battery_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_missile_launcher = {
+		enable_equipment_modules = {
+			ship_missile_launcher_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_secondaries = {
+		enable_equipment_modules = {
+			ship_secondaries_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_ship_anti_air = {
+		enable_equipment_modules = {
+			ship_anti_air_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_fc_and_radar = {
+		enable_equipment_modules = {
+			ship_fire_control_system_future_2
+			ship_radar_future_2
+			ship_sonar_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_nuclear_engine = {
+		enable_equipment_modules = {
+			sub_ship_engine_future_nuclear
+			cruiser_ship_engine_future_nuclear
+			carrier_ship_engine_future_nuclear
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_depth_charge = {
+		enable_equipment_modules = {
+			ship_depth_charge_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_naval_armor = {
+		enable_equipment_modules = {
+			ship_armor_cruiser_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+	redesigned_future_torpedo = {
+		enable_equipment_modules = {
+			ship_torpedo_future_2
+			ship_torpedo_sub_future_2
+		}
+
+		research_cost = 1
+		start_year = 1945
+
+		allow = {
+			always = no
+		}
+	}
+
+}

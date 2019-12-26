@@ -1,0 +1,325 @@
+spriteTypes = {	
+	
+	### FKR - Advisor
+
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_ahn_changho"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_ahn_changho.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_chang_duksoo"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_chang_duksoo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_heo_jeong"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_heo_jeong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_hong_myunghee"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_hong_myunghee.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_jang_myeon"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_jang_myeon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_kim_byungro"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_kim_byungro.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_kim_gyusik"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_kim_gyusik.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_kim_sungsoo"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_kim_sungsoo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_lee_dongnyeong"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_lee_dongnyeong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_lee_siyoung"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_lee_siyoung.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_rhee_syngman"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_rhee_syngman.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_shin_ikhee"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_shin_ikhee.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_advisor_song_jinwoo"
+		texturefile = "gfx/interface/ideas/idea_fkr_advisor_song_jinwoo.dds"
+	}
+
+
+
+	### FKR - Military Chief
+
+	spriteType = {
+		name = "GFX_idea_fkr_armychief_hong_saik"
+		texturefile = "gfx/interface/ideas/idea_fkr_armychief_hong_saik.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_armychief_kim_seokwon"
+		texturefile = "gfx/interface/ideas/idea_fkr_armychief_kim_seokwon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_armychief_lee_eungjoon"
+		texturefile = "gfx/interface/ideas/idea_fkr_armychief_lee_eungjoon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_armychief_lee_jongchan"
+		texturefile = "gfx/interface/ideas/idea_fkr_armychief_lee_jongchan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_armychief_song_hoseong"
+		texturefile = "gfx/interface/ideas/idea_fkr_armychief_song_hoseong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_armychief_won_youngdeok"
+		texturefile = "gfx/interface/ideas/idea_fkr_armychief_won_youngdeok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_navychief_jung_keungmo"
+		texturefile = "gfx/interface/ideas/idea_fkr_navychief_jung_keungmo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_navychief_park_okgyu"
+		texturefile = "gfx/interface/ideas/idea_fkr_navychief_park_okgyu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_navychief_son_wonil"
+		texturefile = "gfx/interface/ideas/idea_fkr_navychief_son_wonil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_airchief_choi_yongdeok"
+		texturefile = "gfx/interface/ideas/idea_fkr_airchief_choi_yongdeok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_airchief_jang_deokchang"
+		texturefile = "gfx/interface/ideas/idea_fkr_airchief_jang_deokchang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_airchief_park_wonseok"
+		texturefile = "gfx/interface/ideas/idea_fkr_airchief_park_wonseok.dds"
+	}
+
+
+
+	### FKR - High Command
+
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_baek_suhnyeop"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_baek_suhnyeop.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_chae_byungdeok"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_chae_byungdeok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_choi_yongdeok"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_choi_yongdeok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_jang_deokchang"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_jang_deokchang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_jeong_keungmo"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_jeong_keungmo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_ji_cheongcheon"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_ji_cheongcheon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_jung_ilkwon"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_jung_ilkwon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_kim_jeongryeol"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_kim_jeongryeol.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_kim_jongoh"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_kim_jongoh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_lee_beomseok"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_lee_beomseok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_lee_hyungkeun"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_lee_hyungkeun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_park_okgyu"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_park_okgyu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_park_wonseok"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_park_wonseok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_highcommand_son_wonil"
+		texturefile = "gfx/interface/ideas/idea_fkr_highcommand_son_wonil.dds"
+	}
+
+
+
+	### FKR - Theorist
+
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_chae_byungdeok"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_chae_byungdeok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_choi_yongdeok"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_choi_yongdeok.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_jung_ilkwon"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_jung_ilkwon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_jung_keungmo"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_jung_keungmo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_lee_seunggi"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_lee_seunggi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_son_wonil"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_son_wonil.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_theorist_yoon_ilseon"
+		texturefile = "gfx/interface/ideas/idea_fkr_theorist_yoon_ilseon.dds"
+	}
+
+
+
+	### FKR - Company
+
+	spriteType = {
+		name = "GFX_idea_fkr_company_asiana_air_lines"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_asianaairlines.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_daewoo"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_daewoo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_dasan"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_dasan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_doosan"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_doosan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_dsme"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_dsme.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_hanwha"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_hanwha.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_hyundai"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_hyundai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_kai"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_kai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_kia_motors"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_kiamotors.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_korean_air"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_koreanair.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_lg_innotek"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_lginnotek.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_lignex1"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_lignex1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_samsung"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_samsung.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_sinjeong"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_sinjeong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_sk"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_sk.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_snt_motiv"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_sntmotiv.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fkr_company_ssanyong"
+		texturefile = "gfx/interface/ideas/idea_fkr_company_ssanyong.dds"
+	}
+	
+
+
+	### KOR
+
+	spriteType = {
+		name = "GFX_idea_kor_advisor_arita_hachiro"
+		texturefile = "gfx/interface/ideas/idea_kor_advisor_arita_hachiro.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_advisor_lee_kiyong"
+		texturefile = "gfx/interface/ideas/idea_kor_advisor_lee_kiyong.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_advisor_minami_jiro"
+		texturefile = "gfx/interface/ideas/idea_kor_advisor_minami_jiro.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_advisor_yoon_deokyoung"
+		texturefile = "gfx/interface/ideas/idea_kor_advisor_yoon_deokyoung.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_airchief_umejeu_yosijiro"
+		texturefile = "gfx/interface/ideas/idea_kor_airchief_umejeu_yosijiro.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_armychief_kim_seokwon"
+		texturefile = "gfx/interface/ideas/idea_kor_armychief_kim_seokwon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_company_dongyangcheoksik"
+		texturefile = "gfx/interface/ideas/idea_kor_company_dongyangcheoksik.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_highcommand_shibusawa_eichi"
+		texturefile = "gfx/interface/ideas/idea_kor_highcommand_shibusawa_eichi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_navychief_saito_makoto"
+		texturefile = "gfx/interface/ideas/idea_kor_navychief_saito_makoto.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kor_theorist_itagaki_seisiro"
+		texturefile = "gfx/interface/ideas/idea_kor_theorist_itagaki_seisiro.dds"
+	}
+
+
+
+}

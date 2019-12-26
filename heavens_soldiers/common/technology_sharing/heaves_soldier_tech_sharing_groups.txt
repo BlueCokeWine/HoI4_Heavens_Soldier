@@ -1,0 +1,13 @@
+technology_sharing_group = {
+
+	id = FKR_comm_faction_research_tech_group
+	name = FKR_comm_faction_research_tech_group_name
+	desc = FKR_comm_faction_research_tech_group_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.15
+
+    available = {
+        is_in_faction_with = FKR
+    }
+}

@@ -1,0 +1,50 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_focus_FKR_contact_Soviet_russia"
+		texturefile = "gfx/interface/goals/FKR/FKR_contact_soviet_russia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_develop_jeju"
+		texturefile = "gfx/interface/goals/FKR/FKR_develop_jeju.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_inventor_mind"
+		texturefile = "gfx/interface/goals/FKR/FKR_inventor_mind.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_power_of_labor"
+		texturefile = "gfx/interface/goals/FKR/FKR_power_of_labor.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_pressure_manchuria"
+		texturefile = "gfx/interface/goals/FKR/FKR_pressure_manchuria.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_red_road_of_asia"
+		texturefile = "gfx/interface/goals/FKR/FKR_red_road_of_asia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_great_britain"
+		texturefile = "gfx/interface/goals/FKR/neutrality/british_monarchy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_bourbon_house"
+		texturefile = "gfx/interface/goals/FKR/neutrality/french_monarchy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_kaiserreich"
+		texturefile = "gfx/interface/goals/FKR/neutrality/german_monarchy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_roma"
+		texturefile = "gfx/interface/goals/FKR/neutrality/italian_monarchy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_old_asia_dynasty"
+		texturefile = "gfx/interface/goals/FKR/neutrality/old_asia_monarchy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_focus_FKR_tzar"
+		texturefile = "gfx/interface/goals/FKR/neutrality/russian_monarchy.dds"			
+	}
+}

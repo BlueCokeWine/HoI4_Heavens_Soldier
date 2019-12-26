@@ -1,0 +1,21 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+	FKR_align_with_korea = { value = 1000 }
+}
+
+opinion_modifiers = {
+	FKR_contact_korea_monarchist = { value = 30 }
+}
+
+opinion_modifiers = {
+	FKR_red_america = { value = 500 }
+}

@@ -1,0 +1,37 @@
+﻿##### OOB #####
+units = {
+	fleet = {
+		name = "대한민국 해군 항공모함 함대"
+		naval_base = 1177
+		task_force = {
+			name = "제 1기동 전투단"
+			location = 1177
+			ship = { name = "ROKS 항공모함" definition = carrier equipment = { ship_hull_carrier_future_1 = {amount = 1 owner = FKR version_name = "광개토대왕 급"} } 				
+				air_wings = { 
+					cv_fighter_equipment_future_1 =  { owner = "FKR" amount = 50 }
+					cv_CAS_equipment_future_1 = { owner = "FKR" amount = 50 }
+				}
+			}
+
+			ship = { name = "ROKS 1번 순양함" definition = light_cruiser equipment = { ship_hull_cruiser_future_1 = {amount = 1 owner = FKR version_name = "이순신 급" } } }
+			ship = { name = "ROKS 2번 순양함" definition = light_cruiser equipment = { ship_hull_cruiser_future_1 = {amount = 1 owner = FKR version_name = "이순신 급" } } }
+			ship = { name = "ROKS 3번 순양함" definition = light_cruiser equipment = { ship_hull_cruiser_future_1 = {amount = 1 owner = FKR version_name = "이순신 급" } } }
+			ship = { name = "ROKS 4번 순양함" definition = light_cruiser equipment = { ship_hull_cruiser_future_1 = {amount = 1 owner = FKR version_name = "이순신 급" } } }
+
+			ship = { name = "ROKS 1번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+			ship = { name = "ROKS 2번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+			ship = { name = "ROKS 3번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+			ship = { name = "ROKS 4번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }	
+			ship = { name = "ROKS 5번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }		
+			ship = { name = "ROKS 6번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+			ship = { name = "ROKS 7번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+			ship = { name = "ROKS 8번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+			ship = { name = "ROKS 9번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+			ship = { name = "ROKS 10번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+			ship = { name = "ROKS 11번 구축함" definition = destroyer equipment = { ship_hull_light_future_1 = {amount = 1 owner = FKR version_name = "세종대왕 급" } } }
+
+			ship = { name = "ROKS 1번 잠수함" definition = submarine equipment = { ship_hull_submarine_future_1 = {amount = 1 owner = FKR version_name = "안창호 급" } } }
+			ship = { name = "ROKS 2번 잠수함" definition = submarine equipment = { ship_hull_submarine_future_1 = {amount = 1 owner = FKR version_name = "안창호 급" } } }
+		}
+	}
+}

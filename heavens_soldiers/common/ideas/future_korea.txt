@@ -1,0 +1,1996 @@
+ideas = {
+
+	country = {
+		FKR_uncompromized_country_idea = {
+
+			available = {
+				has_war = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_spy_coup
+			
+			modifier = {
+				enemy_justify_war_goal_time = 9.99
+				justify_war_goal_time = 9.99
+				lend_lease_tension = 1.0
+				send_volunteers_tension = 1.0
+				trade_opinion_factor = -1.0
+				join_faction_tension = 1.0
+				guarantee_tension = 1.0
+				license_armor_purchase_cost = 1.0
+				improve_relations_maintain_cost_factor = 9.99
+				political_power_gain = -0.1
+			}
+		}
+
+		FKR_arms_seized_1 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_army_problems
+			
+			targeted_modifier = {
+				tag = FKR
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+		}
+		FKR_arms_seized_2 = {
+
+			allowed = {
+				always = no
+			}
+			name = FKR_arms_seized_1
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+			
+			removal_cost = -1
+
+			picture = generic_army_problems
+			
+			targeted_modifier = {
+				tag = FKR
+				attack_bonus_against = -0.25
+				defense_bonus_against = -0.25
+			}
+		}
+		FKR_arms_seized_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+			
+			removal_cost = -1
+			name = FKR_arms_seized_1
+			picture = generic_army_problems
+			
+			targeted_modifier = {
+				tag = FKR
+				attack_bonus_against = -0.4
+				defense_bonus_against = -0.4
+			}
+		}
+
+		FKR_rebuild_the_nation = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = ast_all_in
+
+			modifier = {
+				consumer_goods_factor = -0.20
+				industry_repair_factor = 0.20
+			}
+		}
+
+		FKR_industrial_harmony = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			modifier = {
+				industry_repair_factor = 0.20
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+
+		FKR_rocketry_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			research_bonus = {
+				rocketry = 0.10
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_rocket_site_factor = 0.15
+			}
+		}
+
+		FKR_nuclear_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			research_bonus = {
+				nuclear = 0.10
+			}
+
+			picture = generic_research_bonus
+	
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.20
+			}
+		}
+
+		FKR_strategic_information_management_of_future = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				decryption_tech = 0.10
+				encryption_tech = 0.10
+			}			
+			
+			picture = generic_spy_intel
+
+			modifier = {
+				decryption_factor = 0.2
+				encryption_factor = 0.1
+			}
+		}
+
+		FKR_focus_on_future_tech_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = jap_duplicate_research
+
+			modifier = {
+				research_speed_factor = -0.15
+			}
+		}
+
+		FKR_inventor_mind_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = jap_duplicate_research
+	
+			modifier = {
+				research_speed_factor = 0.25
+			}
+		}
+
+		FKR_doctrine_department_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_army_war_college
+
+			research_bonus = {
+				land_doctrine = 0.10
+				air_doctrine = 0.10
+				naval_doctrine = 0.10
+			}
+
+			modifier = {
+				max_command_power = 50
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05
+			}
+		}
+
+		FKR_army_doc_mobile_warfare = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = general_staff
+	
+			modifier = {
+				army_speed_factor = 0.10
+				army_morale_factor = 0.15
+			}
+		}
+
+		FKR_army_doc_superior_firepower = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = general_staff
+	
+			modifier = {
+				army_attack_factor = 0.15
+				army_defence_factor = 0.10
+			}
+		}
+
+		FKR_army_doc_grand_battle_plan = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = general_staff
+	
+			modifier = {
+				max_planning = 0.25
+				planning_speed = 0.10
+			}
+		}
+
+		FKR_army_doc_mass_assault = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = general_staff
+	
+			modifier = {
+				non_core_manpower = 0.10
+				army_org_Factor = 0.10
+				enemy_partisan_effect = -0.25
+			}
+		}
+
+		FKR_navy_doc_grand_battlefleet = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = escort_effort_focus
+	
+			modifier = {
+				naval_hit_chance = 0.10
+				naval_coordination = 0.05
+				navy_capital_ship_attack_factor = 0.10
+				navy_capital_ship_defence_factor = 0.10
+				navy_screen_attack_factor = 0.15
+				navy_screen_defence_factor = 0.15
+			}
+		}
+
+		FKR_navy_doc_wolfpacks = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = escort_effort_focus
+	
+			modifier = {
+				navy_max_range_factor = 0.25
+				convoy_raiding_efficiency_factor = 0.30
+				navy_submarine_attack_factor = 0.3
+				navy_submarine_defence_factor = 0.3
+				naval_torpedo_range_factor = 1
+			}
+		}
+
+		FKR_navy_doc_base_strike = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = escort_effort_focus
+	
+			modifier = {
+				sortie_efficiency = 0.2
+				navy_carrier_air_targetting_factor = 0.10
+				navy_carrier_air_attack_factor = 0.05
+				navy_carrier_air_targetting_factor 0.05
+				navy_carrier_air_agility_factor = 0.08
+			}
+		}
+
+		FKR_air_doc_air_superiority = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_air_bonus
+	
+			modifier = {
+				enemy_army_bonus_air_superiority_factor = -0.10
+				air_air_superiority_attack_factor = 0.05
+				air_air_superiority_defence_factor = 0.05
+				air_air_superiority_agility_factor = 0.08
+			}
+		}
+
+		FKR_air_doc_direct_ground_support = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_air_bonus
+	
+			modifier = {
+				army_bonus_air_superiority_factor = 0.10
+				air_close_air_support_attack_factor = 0.05
+				air_close_air_support_defence_factor = 0.05
+				air_close_air_support_agility_factor = 0.08
+				naval_strike_attack_factor = 0.05
+				naval_strike_targetting_factor = 0.05
+				naval_strike_agility_factor = 0.08
+			}
+		}
+
+		FKR_air_doc_mass_destruction = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_air_bonus
+	
+			modifier = {
+				air_accidents_factor = -0.10
+				air_night_penalty = -0.15
+				air_weather_penalty = -0.15
+				air_strategic_bomber_attack_factor = 0.05
+				air_strategic_bomber_defence_factor = 0.05
+				air_strategic_bomber_agility_factor = 0.08
+				air_strategic_bomber_bombing_factor = 0.15
+				air_cas_present_factor = 0.3
+			}
+		}
+
+		FKR_for_peopole_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				stability_weekly = 0.01
+				political_power_factor = 0.25
+			}
+		}
+
+		FKR_for_king_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = HUN_hungarian_monarchy
+
+			modifier = {
+				war_support_weekly = 0.01
+				mobilization_speed = 0.25
+			}
+		}
+
+		FKR_korea_democracy_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_democratic_drift_bonus
+
+			modifier = {
+				stability_weekly = 0.005
+				democratic_drift = 0.20
+			}
+		}
+
+		FKR_korea_communism_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				stability_weekly = 0.005
+				communism_drift = 0.50
+				ai_get_ally_desire_factor = 50
+				ai_join_ally_desire_factor = 50
+			}
+		}
+		
+
+		FKR_missionary_of_freedom_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_victors_of_ww1
+
+			rule = {
+				can_declare_war_on_same_ideology = yes
+				can_only_justify_war_on_threat_country = no
+				can_puppet = yes
+			}
+
+			modifier = {
+				justify_war_goal_time = -0.25
+				generate_wargoal_tension = -0.5
+			}
+		}
+
+		FKR_power_of_labor_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_communist_army
+
+			modifier = {
+				non_core_manpower = 0.20
+				production_speed_buildings_factor = 0.2
+				consumer_goods_factor = -0.10
+				industry_free_repair_factor = 1
+			}
+		}
+
+		FKR_ancient_korean_literature_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = FRA_army_of_aggression_focus
+
+			modifier = {
+				mobilization_speed = 0.25
+				defence = 0.2
+				offence = 0.2
+				army_speed_factor = 0.05
+				supply_consumption_factor = -0.20
+				out_of_supply_factor = -0.25
+			}
+		}
+
+		FKR_imperialism_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = ast_abandon_the_westminster_system
+
+			modifier = {
+				generate_wargoal_tension = -0.40
+				justify_war_goal_time = -0.90
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+			}
+		}
+
+		FKR_affect_from_korea_monrchy = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = ast_abandon_the_westminster_system
+
+			modifier = {
+				generate_wargoal_tension = -0.25
+				justify_war_goal_time = -0.25
+				neutrality_drift = 0.20
+			}
+		}
+
+		FKR_support_spain_monarchy = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			picture = ast_abandon_the_westminster_system
+
+			modifier = {
+				neutrality_drift = 0.10
+			}
+		}
+
+		FKR_large_scale_dispatch = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				send_volunteers_tension = -0.50
+				send_volunteer_divisions_required = -0.50
+				send_volunteer_size = 24
+			}
+		}
+
+		FKR_national_uprising_1 = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				army_core_attack_factor = 0.5
+				army_core_defence_factor = 0.5
+			}
+		}
+
+		FKR_national_uprising_2 = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				army_core_attack_factor = 0.75
+				army_core_defence_factor = 0.75
+			}
+		}
+
+		FKR_national_uprising_3 = {
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = FRA_scw_intervention_republicans_focus
+
+			modifier = {
+				army_core_attack_factor = 1.0
+				army_core_defence_factor = 1.0
+			}
+		}
+
+		FKR_Army_Strat_Ops_Idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_army_war_college
+
+			research_bonus = {
+				land_doctrine = 0.05
+			}
+
+			modifier = {
+				max_command_power = 10
+				experience_gain_army = 0.01
+			}
+		}
+
+		FKR_Navy_Strat_Ops_Idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_army_war_college
+
+			research_bonus = {
+				navy_doctrine = 0.05
+			}
+
+			modifier = {
+				max_command_power = 10
+				experience_gain_navy = 0.01
+			}
+		}
+
+		FKR_Air_Strat_Ops_Idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_army_war_college
+
+			research_bonus = {
+				air_doctrine = 0.05
+			}
+
+			modifier = {
+				max_command_power = 10
+				experience_gain_air = 0.01
+			}
+		}
+
+		FKR_war_resource_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = can_wartime_prices_and_trade_board
+
+			modifier = {
+				local_resources_factor = 0.5
+				consumer_goods_factor = 0.10
+			}
+		}
+
+		FKR_economy_resource_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = can_wartime_prices_and_trade_board
+
+			modifier = {
+				local_resources_factor = 0.3
+				consumer_goods_factor = -0.10
+			}
+		}
+
+		FKR_establishing_strat_ops_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_army_war_college
+
+			modifier = {
+				special_forces_cap = 0.25
+				special_forces_min = 120
+			}
+		}
+
+		FKR_kor_style_communism_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				political_power_gain = 0.50
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+
+		FKR_asia_communism_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Unlocked via focus
+			}
+
+			allowed_civil_war = {
+				original_tag = FKR
+			}
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				political_power_gain = 0.25
+				justify_war_goal_time = -0.15
+			}
+		}
+
+	}
+
+	
+	
+	political_advisor = {	
+
+		ahn_changho = {
+			picture = fkr_advisor_ahn_changho
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_contact_prov_gov
+			}
+			traits = { popular_figurehead }
+		}
+		chang_duksoo = {
+			picture = fkr_advisor_chang_duksoo
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { backroom_backstabber }
+			ai_will_do = { factor = 0 }
+		}
+		heo_jeong = {
+			picture = fkr_advisor_heo_jeong
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_contact_prov_gov
+			}
+			traits = { democratic_reformer }
+			ai_will_do = { factor = 0 }
+		}
+		hong_myunghee = {
+			picture = fkr_advisor_hong_myunghee
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_contact_prov_gov
+			}
+			traits = { communist_revolutionary }
+			ai_will_do = { factor = 0 }
+		}
+		jang_myeon = {
+			picture = fkr_advisor_jang_myeon
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { silent_workhorse }
+		}
+		kim_byungro = {
+			picture = fkr_advisor_kim_byungro
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { prince_of_terror }
+		}
+		kim_gyusik = {
+			picture = fkr_advisor_kim_gyusik
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_contact_prov_gov
+			}
+			traits = { fortification_engineer }
+			ai_will_do = { factor = 0.5 }
+		}
+		kim_sungsoo = {
+			picture = fkr_advisor_kim_sungsoo
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { quartermaster_general }
+		}
+		lee_dongnyeong = {
+			picture = fkr_advisor_lee_dongnyeong
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_contact_prov_gov
+			}
+			traits = { compassionate_gentleman }
+		}
+		lee_siyoung = {
+			picture = fkr_advisor_lee_siyoung
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_contact_prov_gov
+			}
+			traits = { captain_of_industry }
+			ai_will_do = { factor = 2 }
+		}
+		rhee_syngman = {
+			picture = fkr_advisor_rhee_syngman
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { financial_expert }
+		}
+		shin_ikhee = {
+			picture = fkr_advisor_shin_ikhee
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_contact_prov_gov
+			}
+			traits = { fascist_demagogue }
+			ai_will_do = { factor = 0 }
+		}
+		song_jinwoo = {
+			picture = fkr_advisor_song_jinwoo
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { war_industrialist }
+			ai_will_do = { factor = 3 }
+		}
+
+	}
+		
+		
+	# MILITARY
+	theorist = {
+		chae_byungdeok_theorist = {
+			picture = fkr_theorist_chae_byungdeok
+			allowed = {
+				original_tag = FKR
+			}
+			cost = 250
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			traits = { superior_firepower_expert }
+		}
+		choi_yongdeok_theorist = {
+			picture = fkr_theorist_choi_yongdeok
+			allowed = {
+				original_tag = FKR
+			}
+			cost = 250
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			research_bonus = {
+				cat_battlefield_support = 0.10
+			}
+			traits = { dive_bomber }
+		}
+		jung_ilkwon_theorist = {
+			picture = fkr_theorist_jung_ilkwon
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			research_bonus = {
+				land_doctrine = 0.07
+			}
+			traits = { blitzkrieg_theorist }
+		}
+		jung_keungmo_theorist = {
+			picture = fkr_theorist_jung_keungmo
+			allowed = {
+				original_tag = FKR
+			}
+			cost = 250
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			research_bonus = {
+				cat_trade_interdiction = 0.10
+			}
+			traits = { submarine_specialist }
+		}
+		lee_seunggi = {
+			picture = fkr_theorist_lee_seunggi
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_human_resource_development
+			}
+			research_bonus = {
+				rocketry = 0.10
+			}
+			traits = { rocket_scientist }
+		}
+		son_wonil_theorist = {
+			picture = fkr_theorist_son_wonil
+			allowed = {
+				original_tag = FKR
+			}
+			cost = 250
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			research_bonus = {
+				cat_base_strike = 0.10
+			}
+			traits = { naval_aviation_pioneer }
+		}
+		yoon_ilseon = {
+			picture = fkr_theorist_yoon_ilseon
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_human_resource_development
+			}
+			research_bonus = {
+				nuclear = 0.10
+			}
+			traits = { nuclear_scientist }
+		}
+	}	
+
+	army_chief = {
+		hong_saik = {
+			picture = fkr_armychief_hong_saik
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_chief_maneuver_3 army_chief_reform_2 }
+		}
+		kim_seokwon = {
+			picture = fkr_armychief_kim_seokwon
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_chief_organizational_3 army_chief_reform_2 }
+		}
+		lee_eungjoon = {
+			picture = fkr_armychief_lee_eungjoon
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_chief_morale_3 army_chief_reform_2 }
+		}
+		lee_jongchan = {
+			picture = fkr_armychief_lee_jongchan
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_chief_drill_3 army_chief_reform_3 }
+		}
+		song_hoseong = {
+			picture = fkr_armychief_song_hoseong
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			traits = { army_chief_defensive_3 army_chief_reform_1 }
+		}
+		won_youngdeok = {
+			picture = fkr_armychief_won_youngdeok
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_chief_offensive_3 army_chief_reform_1 }
+		}
+	}
+
+	navy_chief = {
+		jung_keungmo_navy_chief = {
+			picture = fkr_navychief_jung_keungmo
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { navy_chief_maneuver_3 navy_chief_commerce_raiding_3 }
+		}
+		park_okgyu_navy_chief = {
+			picture = fkr_navychief_park_okgyu
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { navy_chief_decisive_battle_3 navy_chief_reform_2 }
+		}
+		son_wonil_navy_chief = {
+			picture = fkr_navychief_son_wonil
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			traits = { navy_chief_naval_aviation_3 navy_chief_reform_2 }
+		}
+	}
+
+	air_chief = {
+		choi_yongdeok_air_chief = {
+			picture = fkr_airchief_choi_yongdeok
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			traits = { air_chief_ground_support_3 air_chief_night_operations_1 }
+		}
+		jang_deokchang_air_chief = {
+			picture = fkr_airchief_jang_deokchang
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { air_chief_all_weather_3 air_chief_night_operations_3 }
+		}
+		park_wonseok_air_chief = {
+			picture = fkr_airchief_park_wonseok
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { air_chief_safety_3 air_chief_reform_3 }
+		}
+	}	
+	
+	high_command = {
+		baek_suhnyeop = {
+			picture = fkr_highcommand_baek_suhnyeop
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_cavalry_3 }
+		}
+		chae_byungdeok_high_command = {
+			picture = fkr_highcommand_chae_byungdeok
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_regrouping_3 army_entrenchment_2 }
+		}
+		choi_yongdeok_high_command = {
+			picture = fkr_highcommand_choi_yongdeok
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			traits = { air_tactical_bombing_3 air_strategic_bombing_2 }
+		}
+		jang_deokchang_high_command = {
+			picture = fkr_highcommand_jang_deokchang
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { air_naval_strike_3 }
+		}
+		jeong_keungmo = {
+			picture = fkr_highcommand_jeong_keungmo
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { navy_screen_3 navy_submarine_2 }
+		}
+		ji_cheongcheon = {
+			picture = fkr_highcommand_ji_cheongcheon
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			traits = { army_infantry_3 }
+		}
+		jung_ilkwon_high_command = {
+			picture = fkr_highcommand_jung_ilkwon
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_armored_3 }
+		}
+		kim_jeongryeol = {
+			picture = fkr_highcommand_kim_jeongryeol
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { air_air_superiority_3 }
+		}
+		kim_jongoh = {
+			picture = fkr_highcommand_kim_jongoh
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_commando_3 army_logistics_1 }
+		}
+		lee_beomseok = {
+			picture = fkr_highcommand_lee_beomseok
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			traits = { army_artillery_3 }
+		}
+		lee_hyungkeun = {
+			picture = fkr_highcommand_lee_hyungkeun
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { army_concealment_3 army_logistics_2 }
+		}
+		park_okgyu_high_command = {
+			picture = fkr_highcommand_park_okgyu
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { navy_capital_ship_3 navy_naval_air_defense_2 }
+		}
+		park_wonseok_high_command = {
+			picture = fkr_highcommand_park_wonseok
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				OR = {
+					has_completed_focus = FKR_create_republic
+					has_completed_focus = FKR_create_empire
+				}
+			}
+			traits = { air_air_combat_training_3 air_bomber_interception_2 }
+		}
+		son_wonil_high_command = {
+			picture = fkr_highcommand_son_wonil
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_expansion_independent_army
+			}
+			traits = { navy_carrier_3 navy_fleet_logistics_2 }
+		}
+	}
+		
+
+	# TECHNOLOGY
+	naval_manufacturer = {
+
+		designer = yes
+
+		daewoo_shipbuilding_marine_engineering = {
+			picture = fkr_company_dsme
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_naval_company
+			}
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.25
+					reliability  = 0.2
+				}
+				light_cruiser = {
+					build_cost_ic = -0.25
+					reliability  = 0.2
+				}
+				heavy_cruiser = {
+					armor_value = 0.2
+				}
+				battleship = {
+					armor_value = 0.2
+				}
+			}
+		}
+
+		ssanyong_heavy_industry = {
+			picture = fkr_company_ssanyong
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_naval_company
+			}
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { pacific_fleet_naval_manufacturer }
+
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.25
+					reliability  = 0.2
+				}
+				light_cruiser = {
+					build_cost_ic = -0.25
+					reliability  = 0.2
+				}
+				carrier = {
+					armor_value = 0.2
+					carrier_size = 0.25
+				}
+				submarine = {
+					naval_speed = 0.2
+					torpedo_attack = 0.2
+				}
+			}
+		}
+
+	}
+	
+	aircraft_manufacturer = {
+
+		designer = yes
+		
+		korean_air = {
+						
+			picture = fkr_company_korean_air
+
+			allowed = {
+				original_tag = FKR		
+			}
+			available = {
+				has_completed_focus = FKR_aircraft_company
+			}
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { heavy_aircraft_manufacturer }
+
+			modifier = {
+
+			}
+		}
+
+		asiana_airlines = {
+						
+			picture = fkr_company_asiana_air_lines
+
+			allowed = {
+				original_tag = FKR		
+			}
+			available = {
+				has_completed_focus = FKR_aircraft_company
+			}
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { medium_aircraft_manufacturer }
+
+			modifier = {
+
+			}
+		}
+
+		daewoo_heavy_industry = {
+						
+			picture = fkr_company_daewoo
+						
+			allowed = {
+				original_tag = FKR		
+			}
+			available = {
+				has_completed_focus = FKR_aircraft_company
+			}
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { naval_aircraft_manufacturer }
+
+			modifier = {
+
+			}
+		}
+
+		lig_nex1 = {
+						
+			picture = fkr_company_lignex1
+
+			allowed = {
+				original_tag = FKR		
+			}
+			available = {
+				has_completed_focus = FKR_aircraft_company
+			}
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { CAS_manufacturer }
+
+			modifier = {
+
+			}
+		}
+
+		korea_aerospace_industries = {
+						
+			picture = fkr_company_kai
+
+			allowed = {
+				original_tag = FKR		
+			}
+			available = {
+				has_completed_focus = FKR_aircraft_company
+			}
+			research_bonus = {
+				air_equipment = 0.10
+			}
+			
+			traits = { light_aircraft_manufacturer_2 }
+
+			modifier = {
+
+			}
+		}
+
+	}
+	
+	industrial_concern = {
+
+		doosan_industry = {
+
+			picture = fkr_company_doosan
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_industrial_company
+			}
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			traits = { industrial_concern }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+
+		sk_industry = {
+			
+			picture = fkr_company_sk
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_industrial_company
+			}
+			research_bonus = {
+				electronics = 0.15
+			}
+			
+			traits = { electronics_concern }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_nuclear_reactor_factor = 0.20
+				production_speed_radar_station_factor = 0.20
+				production_speed_rocket_site_factor = 0.20
+			}
+		}
+
+		hanwha_industry = {
+						
+			picture = fkr_company_hanwha
+			
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_industrial_company
+			}		
+			research_bonus = {
+				industry = 0.10
+				synth_resources = 0.20
+			}
+			
+			traits = { refinery_concern }
+
+			modifier = {
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+		}
+
+	}
+	
+	materiel_manufacturer = {
+
+		designer = yes
+		
+		snt_motive = {
+			
+			picture = fkr_company_snt_motiv
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_materiel_company
+			}
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.25
+					reliability = 0.1
+				}
+			}
+
+			modifier = {
+				
+			}
+		}
+
+		dasan_machinery = {
+			
+			picture = fkr_company_dasan
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_materiel_company
+			}
+			research_bonus = {
+				infantry_weapons = 0.10
+			}
+			
+			traits = { infantry_equipment_manufacturer }
+
+			equipment_bonus = {
+				infantry_equipment = {
+					soft_attack = 0.25
+					hard_attack = 0.25
+					breakthrough = 0.25
+					build_cost_ic = 0.10
+				}
+			}
+
+			modifier = {
+				
+			}
+		}
+
+		kia_motors = {
+						
+			picture = fkr_company_kia_motors
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_materiel_company
+			}
+			research_bonus = {
+				motorized_equipment = 0.10
+			}
+			
+			traits = { motorized_equipment_manufacturer }
+
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.05
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+					maximum_speed = 0.05
+				}
+			}
+
+			modifier = {
+				
+			}
+		}
+
+		lg_innotek = {
+			
+			picture = fkr_company_lg_innotek
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_materiel_company
+			}
+			research_bonus = {
+				support_tech = 0.10
+			}
+
+			equipment_bonus = {
+				support_equipment = {
+					build_cost_ic = -0.5
+					reliability = 0.25
+				}
+			}
+			
+			traits = { support_equipment_manufacturer }
+			
+		}
+
+		imperial_arsenal = {
+			
+			picture = generic_artillery_manufacturer_2
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_materiel_company
+			}
+			research_bonus = {
+				artillery = 0.10
+			}
+			
+			traits = { artillery_manufacturer }
+
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.25
+					reliability = 0.20
+					soft_attack = 0.25
+					hard_attack = 0.50
+				}
+			}
+			
+			modifier = {
+				#대량생산
+				#성능
+			}
+		}
+
+	}
+	
+	tank_manufacturer = {
+		designer = yes
+		
+		sinjeong_development = {
+
+			picture = fkr_company_sinjeong
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_tank_company
+			}
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { fast_tank_manufacturer }
+
+			equipment_bonus = {
+				light_tank_equipment = {
+					build_cost_ic = -0.25
+					reliability = 0.20
+				}
+			}
+			
+			modifier = {
+				#대량생산
+				#성능
+			}
+
+		}
+
+		hyundai_heavy_industry = {
+
+			picture = fkr_company_hyundai
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_tank_company
+			}
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { heavy_tank_manufacturer }
+
+			modifier = {
+				#대량생산
+				#성능
+			}
+
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					build_cost_ic = -0.25
+					reliability = 0.20
+				}
+				super_heavy_tank_equipment = {
+					build_cost_ic = -0.25
+					reliability = 0.20
+				}
+			}
+
+		}
+
+		samsung_techwin = {
+
+			picture = fkr_company_samsung
+
+			allowed = {
+				original_tag = FKR
+			}
+			available = {
+				has_completed_focus = FKR_tank_company
+			}
+			research_bonus = {
+				armor = 0.10
+			}
+			
+			traits = { medium_tank_manufacturer }
+
+			equipment_bonus = {
+				medium_tank_equipment = {
+					build_cost_ic = -0.25
+					reliability = 0.20
+				}
+				modern_tank_equipment = {
+					build_cost_ic = -0.25
+					reliability = 0.20
+				}
+			}
+
+			modifier = {
+				#대량생산
+				#성능
+			}
+
+		}
+	}
+	
+	
+}

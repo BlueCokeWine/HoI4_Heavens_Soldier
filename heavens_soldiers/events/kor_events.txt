@@ -1,0 +1,79 @@
+﻿add_namespace = kor
+
+country_event = {
+	id = kor.1
+	title = kor.1.title
+	desc = kor.1.desc
+	picture = GFX_report_event_japanese_soldiers_02
+
+	is_triggered_only = yes
+	
+	option = {
+		name = kor.1.a
+		division_template = { name = "Korea Conscription Regiment" division_names_group = JAP_INF_01 is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } infantry = { x = 2 y = 0 } } }
+		525 = {
+			create_unit = { 
+				division = "name = \"1. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+			create_unit = { 
+				division = "name = \"2. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+			create_unit = { 
+				division = "name = \"3. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+			create_unit = { 
+				division = "name = \"4. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+			create_unit = { 
+				division = "name = \"5. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+		}
+		527 = {
+			create_unit = { 
+				division = "name = \"6. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+			create_unit = { 
+				division = "name = \"7. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+		}
+		763 = {
+			create_unit = { 
+				division = "name = \"8. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+			create_unit = { 
+				division = "name = \"9. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+		}
+		766 = {
+			create_unit = { 
+				division = "name = \"10. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+			create_unit = { 
+				division = "name = \"11. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
+				owner = PREV
+			}
+		}
+	}
+}
+
+
+
+#################
+## IDEAS
+#################
+# 
+
+#################
+## PICTURES
+#################
+# GFX_event_FKR_secret 

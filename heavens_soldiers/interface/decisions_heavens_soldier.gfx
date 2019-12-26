@@ -1,0 +1,33 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_decision_category_fkr_asia_guardian"
+		texturefile = "gfx/interface/decisions/decision_category_fkr_asia_guardian.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_fkr_asia_guardian"
+		texturefile = "gfx/interface/decisions/decision_fkr_asia_guardian.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_FKR_ancient_korean_literature_category"
+		texturefile = "gfx/interface/decisions/decision_FKR_ancient_korean_literature_category.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_FKR_future_tech_research"
+		texturefile = "gfx/interface/decisions/decision_FKR_future_tech_research.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_FKR_cat_strat_ops"
+		texturefile = "gfx/interface/decisions/decision_FKR_cat_strat_ops.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_cat_FKR_unified_earth_government"
+		texturefile = "gfx/interface/decisions/decision_cat_FKR_unified_earth_government.dds"
+	}
+
+}

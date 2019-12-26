@@ -1,0 +1,28 @@
+﻿l_english:
+ KOR_communism_party:0 "조선노동당"
+ KOR_communism_party_long:0 "조선노동당"
+ KOR_democratic_party:0 "독립협회"
+ KOR_democratic_party_long:0 "독립협회"
+ KOR_neutrality_party:0 "이 왕조"
+ KOR_neutrality_party_long:0 "조선 이 왕조"
+ KOR_fascism_party:0 "귀족원"
+ KOR_fascism_party_long:0 "제국의회 귀족원"
+
+ FKR_communism_party:0 "임시 군사 정권"
+ FKR_communism_party_long:0 "임시 군사 정권"
+ FKR_democratic_party:0 "임시 군사 정권"
+ FKR_democratic_party_long:0 "임시 군사 정권"
+ FKR_neutrality_party:0 "임시 군사 정권"
+ FKR_neutrality_party_long:0 "임시 군사 정권"
+ FKR_fascism_party:0 "임시 군사 정권"
+ FKR_fascism_party_long:0 "임시 군사 정권"
+ 
+ FKR_late_communism_party:0 "조선인민당"
+ FKR_late_communism_party_long:0 "조선 공화국 인민당"
+ FKR_late_democratic_party:0 "신한청년당"
+ FKR_late_democratic_party_long:0 "대한민국 신한청년당"
+ FKR_late_neutrality_party:0 "이 왕조"
+ FKR_late_neutrality_party_long:0 "대조선 이 왕조"
+ FKR_late_fascism_party:0 "황국협회"
+ FKR_late_fascism_party_long:0 "대한제국 황국협회"
+ 

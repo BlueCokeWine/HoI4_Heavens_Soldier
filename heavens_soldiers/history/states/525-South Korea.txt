@@ -1,0 +1,30 @@
+
+state={
+	id=525
+	name="STATE_525"
+
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 7
+			arms_factory = 2
+			industrial_complex = 5
+			dockyard = 2
+			air_base = 6
+			7125 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			7125 40 
+		}
+		add_core_of = KOR
+	}
+
+	provinces={
+		7125 7221 10036 
+	}
+	manpower=7719862
+	buildings_max_level_factor=1.000
+	state_category=megalopolis
+}

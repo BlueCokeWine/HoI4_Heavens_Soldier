@@ -1,0 +1,91 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_news_event_fkr_annex_manchuria"
+		texturefile = "gfx/event_pictures/news_event_fkr_annex_manchuria.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_fkr_independent_war"
+		texturefile = "gfx/event_pictures/news_event_fkr_independent_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_fkr_join_royal_faction"
+		texturefile = "gfx/event_pictures/news_event_fkr_join_royal_faction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_fkr_rebuild_hwan_empire"
+		texturefile = "gfx/event_pictures/news_event_fkr_rebuild_hwan_empire.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_fkr_capture_seoul"
+		texturefile = "gfx/event_pictures/news_event_fkr_capture_seoul.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_fkr_carrier"
+		texturefile = "gfx/event_pictures/report_event_fkr_carrier.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_gwanghwamoon"
+		texturefile = "gfx/event_pictures/report_event_fkr_gwanghwamoon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_jeju"
+		texturefile = "gfx/event_pictures/report_event_fkr_jeju.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_join_royal_faction"
+		texturefile = "gfx/event_pictures/report_event_fkr_join_royal_faction.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_korea_MP"
+		texturefile = "gfx/event_pictures/report_event_fkr_korea_MP.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_korea_peninsula"
+		texturefile = "gfx/event_pictures/report_event_fkr_korea_peninsula.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_korea_people"
+		texturefile = "gfx/event_pictures/report_event_fkr_korea_people.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_korea_soldier_march_1"
+		texturefile = "gfx/event_pictures/report_event_fkr_korea_soldier_march_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_korea_soldier_march_2"
+		texturefile = "gfx/event_pictures/report_event_fkr_korea_soldier_march_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_korea_soldier_march_3"
+		texturefile = "gfx/event_pictures/report_event_fkr_korea_soldier_march_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_korea_speech"
+		texturefile = "gfx/event_pictures/report_event_fkr_korea_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fkr_future_division"
+		texturefile = "gfx/event_pictures/report_event_fkr_future_division.dds"
+	}
+	
+}
+	
+	
+	

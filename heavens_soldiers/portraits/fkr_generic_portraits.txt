@@ -1,0 +1,33 @@
+FKR = {
+	army = {
+		male = {
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_1.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_2.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_3.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_4.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_5.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_6.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_7.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_8.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_9.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_10.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_11.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_12.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_land_13.dds"
+
+		}
+		female = {
+			
+		}
+	}
+	
+	navy = {
+		male = {
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_navy_1.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_navy_2.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_navy_3.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_navy_4.dds"
+			"gfx/leaders/FKR/Portrait_Future_Korea_Generic_Male_navy_5.dds"
+		}
+	}
+}

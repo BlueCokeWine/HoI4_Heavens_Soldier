@@ -1,0 +1,395 @@
+spriteTypes = {	
+
+	### FKR futrue equipment ###
+
+	SpriteType = {
+		name = "GFX_future_jet_CAS_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_CAS.dds"
+	}
+	SpriteType = {
+		name = "GFX_future_infantry_equipment_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_infantry_weapons.dds"
+	}
+	SpriteType = {
+		name = "GFX_future_jet_strat_bomber_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_jet_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_future_jet_multirole_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_jet_multirole.dds"
+	}
+	SpriteType = {
+		name = "GFX_future_modern_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_modern_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_future_modern_tank_aa_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_modern_tank_aa.dds"
+	}
+	SpriteType = {
+		name = "GFX_future_modern_tank_artillery_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_modern_tank_artillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_future_mechanized_equipment_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_mechanized_equipment.dds"
+	}
+	SpriteType = {
+		name = "GFX_attack_heli_medium"
+		texturefile = "gfx/interface/technologies/FKR_attack_heli.dds"
+	}
+	SpriteType = {
+		name = "GFX_transport_heli_medium"
+		texturefile = "gfx/interface/technologies/FKR_transport_heli.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_redesigned_future_jet_CAS_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_CAS.dds"
+	}
+	
+	
+	SpriteType = {
+		name = "GFX_redesigned_future_infantry_equipment_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_infantry_weapons.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_jet_strat_bomber_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_jet_bomber.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_jet_multirole_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_jet_multirole.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_modern_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_modern_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_modern_tank_aa_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_modern_tank_aa.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_modern_tank_artillery_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_modern_tank_artillery.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_mechanized_equipment_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_mechanized_equipment.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_redesigned_attack_heli_medium"
+		texturefile = "gfx/interface/technologies/FKR_attack_heli.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_transport_heli_medium"
+		texturefile = "gfx/interface/technologies/FKR_transport_heli.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_anti_air_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_anti_air.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_anti_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_anti_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_redesigned_future_mlrs_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_mlrs.dds"
+	}
+
+	###	###	###	###	###	###	###	###	###	###
+	###		Future Naval Equipment		###
+	###	###	###	###	###	###	###	###	###	###
+
+	SpriteType = {
+		name = "GFX_future_destroyer_legacy_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_destroyer.dds"
+	}
+    SpriteType = {
+		name = "GFX_future_light_cruiser_legacy_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_light_cruiser.dds"
+	}
+    SpriteType = {
+		name = "GFX_future_carrier_legacy_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_carrier.dds"
+	}
+    SpriteType = {
+		name = "GFX_future_submarine_legacy_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_submarine.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_redesigned_future_destroyer_legacy_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_destroyer.dds"
+	}
+    SpriteType = {
+		name = "GFX_redesigned_future_light_cruiser_legacy_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_light_cruiser.dds"
+	}
+    SpriteType = {
+		name = "GFX_redesigned_future_carrier_legacy_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_carrier.dds"
+	}
+    SpriteType = {
+		name = "GFX_redesigned_future_submarine_legacy_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_submarine.dds"
+	}
+
+
+
+    SpriteType = {
+		name = "GFX_future_light_hull_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_destroyer.dds"
+	}
+    SpriteType = {
+		name = "GFX_future_cruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_light_cruiser.dds"
+	}
+    SpriteType = {
+		name = "GFX_future_carrier_hull_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_carrier.dds"
+	}
+    SpriteType = {
+		name = "GFX_future_submarine_hull_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_submarine.dds"
+	}
+
+    SpriteType = {
+		name = "GFX_redesigned_future_light_hull_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_destroyer.dds"
+	}
+    SpriteType = {
+		name = "GFX_redesigned_future_cruiser_hull_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_light_cruiser.dds"
+	}
+    SpriteType = {
+		name = "GFX_redesigned_future_carrier_hull_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_carrier.dds"
+	}
+    SpriteType = {
+		name = "GFX_redesigned_future_submarine_hull_medium"
+		texturefile = "gfx/interface/technologies/FKR_future_submarine.dds"
+	}
+
+	###	###	###	###	###	###	###	###
+	###		Old Equipment		###
+	###	###	###	###	###	###	###	###
+
+	SpriteType = {
+		name = "GFX_FKR_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/FKR_mechanized_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/FKR_mechanized_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/FKR_mechanized_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_infantry3_medium"
+		texturefile = "gfx/interface/technologies/FKR_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_infantry2_medium"
+		texturefile = "gfx/interface/technologies/FKR_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FKR_infantry1_medium"
+		texturefile = "gfx/interface/technologies/FKR_infantry_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_infantry0_medium"
+		texturefile = "gfx/interface/technologies/FKR_infantry_equipment_0.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FKR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FKR_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FKR_infantry_equipment_2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FKR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FKR_infantry_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FKR_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_imp_light_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FKR_gwtank_medium"
+		texturefile = "gfx/interface/technologies/FKR_gwtank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_FKR_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FKR_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/FKR_superheavy_tank.dds"
+	}
+
+	### German Aircrafts ###
+
+	SpriteType = {
+		name = "GFX_FKR_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/FKR_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/FKR_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FKR_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/FKR_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FKR_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/FKR_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FKR_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/FKR_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FKR_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/FKR_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FKR_CAS2_medium"
+		texturefile = "gfx/interface/technologies/FKR_CAS2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_CAS3_medium"
+		texturefile = "gfx/interface/technologies/FKR_CAS3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FKR_cv_CAS3_medium"
+		texturefile = "gfx/interface/technologies/FKR_cv_CAS3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/FKR_heavy_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/FKR_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_FKR_fighter3_medium"
+		texturefile = "gfx/interface/technologies/FKR_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/FKR_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/FKR_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/FKR_naval_bomber3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/FKR_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_CAS1_medium"
+		texturefile = "gfx/interface/technologies/FKR_CAS1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/FKR_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_fighter2_medium"
+		texturefile = "gfx/interface/technologies/FKR_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_FKR_fighter1_medium"
+		texturefile = "gfx/interface/technologies/FKR_fighter1.dds"
+	}	
+	
+	
+	
+}

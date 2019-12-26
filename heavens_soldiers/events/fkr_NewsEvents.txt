@@ -1,0 +1,1050 @@
+﻿add_namespace = fkr_news
+
+news_event = {
+	id = fkr_news.1
+	title = fkr_news.1.title
+	desc = fkr_news.1.desc
+	picture = GFX_news_event_fkr_rebuild_hwan_empire
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fkr_news.1.a
+		trigger = {
+			original_tag = FKR
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = fkr_news.1.b
+		trigger = {
+			NOT = { original_tag = FKR }
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = fkr_news.1.c
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+}
+
+news_event = {
+	id = fkr_news.2
+	title = fkr_news.2.title
+	desc = fkr_news.2.desc
+	picture = GFX_news_event_generic_read_write
+
+	is_triggered_only = yes
+	
+	option = {
+		name = fkr_news.2.a
+		trigger = {
+			original_tag = FKR
+		}
+	}
+	option = {
+		name = fkr_news.2.b
+		trigger = {
+			OR = {
+				original_tag = HOL
+				original_tag = ENG
+				AND = {
+					original_tag = FRA
+					has_government = democratic
+				}
+			}
+		}
+	}
+	option = {
+		name = fkr_news.2.c
+		trigger = {
+			NOT = {
+				original_tag = FKR
+				original_tag = HOL
+				original_tag = ENG
+				AND = {
+					original_tag = FRA
+					has_government = democratic
+				}
+			}
+		}
+	}
+}
+
+news_event = {
+	id = fkr_news.3
+	title = fkr_news.3.title
+	desc = fkr_news.3.desc
+	picture = GFX_news_event_fkr_annex_manchuria
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fkr_news.3.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = fkr_news.3.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.3.c
+		trigger = { TAG = JAP }
+	}
+}
+
+news_event = {
+	id = fkr_news.4
+	title = fkr_news.4.title
+	desc = fkr_news.4.desc
+	picture = GFX_news_event_fkr_independent_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fkr_news.4.a
+		trigger = {
+			NOT = {
+				OR = {
+					is_in_faction_with = KOR
+					TAG = FKR
+				}
+			}
+		}
+	}
+	option = {
+		name = fkr_news.4.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.4.c
+		trigger = {
+			is_in_faction_with = KOR
+		}
+	}
+}
+
+news_event = {
+	id = fkr_news.5
+	title = fkr_news.5.title
+	desc = fkr_news.5.desc
+	picture = GFX_news_event_fkr_join_royal_faction
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fkr_news.5.a
+		trigger = {
+			NOT = {
+				is_in_faction_with = FKR
+			}
+		}
+	}
+	option = {
+		name = fkr_news.5.b
+		trigger = { is_in_faction_with = FKR }
+	}
+}
+
+news_event = {
+	id = fkr_news.6
+	title = fkr_news.6.title
+	desc = fkr_news.6.desc
+	picture = GFX_news_event_saf_civil_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = fkr_news.6.a
+		trigger = {
+			NOT = {
+				tag = FKR
+				tag = JAP
+			}
+		}
+	}
+	option = {
+		name = fkr_news.6.b
+		trigger = { 
+			tag = FKR
+		}
+	}
+
+	option = {
+		name = fkr_news.6.c
+		trigger = { tag = JAP }
+	}
+}
+
+# The Fall of Tokyo (FKR) Original 135
+news_event = {
+	id = fkr_news.7
+	title = fkr_news.7.title
+	desc = fkr_news.7.desc
+	picture = GFX_news_event_053
+	
+	major = yes
+	
+	trigger = {
+		282 = { is_controlled_by = FKR }
+		282 = { is_owned_by = JAP }
+		FKR = { has_war_with = JAP }
+		NOT = { has_global_flag = fall_of_tokyo_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_tokyo_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.7.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = fkr_news.7.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.7.c
+		trigger = { TAG = JAP }
+	}
+}
+
+# The Fall of Hong Kong Original 123
+news_event = {
+	id = fkr_news.8
+	title = fkr_news.8.title
+	desc = fkr_news.8.desc
+	picture = GFX_news_event_040
+	
+	major = yes
+	
+	trigger = {
+		326 = { is_controlled_by = FKR }
+		326 = { is_owned_by = ENG }
+		FKR = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_hong_kong_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_hong_kong_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.8.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = fkr_news.8.b # 117.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.8.c # 100.c
+		trigger = { TAG = ENG }
+	}
+}
+
+# The Fall of Paris (USSR) Original 142
+news_event = {
+	id = fkr_news.9
+	title = fkr_news.9.title
+	desc = fkr_news.9.desc
+	picture = GFX_news_event_064
+	
+	major = yes
+	
+	trigger = {
+		16 = { is_controlled_by = FKR }
+		16 = { is_owned_by = FRA }
+		FKR = { has_war_with = FRA }
+		NOT = { has_global_flag = fall_of_paris_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_paris_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.9.a # 140.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = FRA
+			}
+		}
+	}
+	option = {
+		name = fkr_news.9.b # 138.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.9.c # 100.c
+		trigger = { TAG = FRA }
+	}
+}
+
+# The Fall of London (USSR) Original 144
+news_event = {
+	id = fkr_news.10
+	title = fkr_news.10.title
+	desc = fkr_news.10.desc
+	picture = GFX_news_event_063
+	
+	major = yes
+	
+	trigger = {
+		126 = { is_controlled_by = FKR }
+		126 = { is_owned_by = ENG }
+		FKR = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_london_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_london_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.10.a # 140.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = fkr_news.10.b # 138.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.10.c # 100.c
+		trigger = { TAG = ENG }
+	}
+}
+
+# The Fall of Moscow (Allies) Original 136
+news_event = {
+	id = fkr_news.11
+	title = fkr_news.11.title
+	desc = fkr_news.11.desc
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		219 = { is_controlled_by = FKR }
+		219 = { is_owned_by = SOV }
+		FKR = { has_war_with = SOV }
+		NOT = { has_global_flag = fall_of_moscow_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_moscow_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.11.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = fkr_news.11.b # 132.b
+		trigger = { 
+			TAG = FKR
+		}
+	}
+	option = {
+		name = fkr_news.11.c # 100.c
+		trigger = { TAG = SOV }
+	}
+}
+
+# The Fall of Washington Original 110
+news_event = {
+	id = fkr_news.12
+	title = fkr_news.12.title
+	desc = fkr_news.12.desc
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		361 = { is_controlled_by = FKR }
+		361 = { is_owned_by = USA }
+		FKR = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_washington_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_washington_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.12.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = fkr_news.12.b # 100.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.12.c # 100.c
+		trigger = { TAG = USA }
+	}
+}
+
+# The Fall of New York Original 111
+news_event = {
+	id = fkr_news.13
+	title = fkr_news.13.title
+	desc = fkr_news.13.desc
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		358 = { is_controlled_by = FKR }
+		358 = { is_owned_by = USA }
+		FKR = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_new_york_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_new_york_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.13.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = fkr_news.13.b # 100.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.13.c #100.c
+		trigger = { TAG = USA }
+	}
+}
+
+# The Fall of Singapore Original 117
+news_event = {
+	id = fkr_news.14
+	title = fkr_news.14.title
+	desc = fkr_news.14.desc
+	picture = GFX_news_event_038
+	
+	major = yes
+	
+	trigger = {
+		336 = { is_controlled_by = FKR }
+		336 = { is_owned_by = ENG }
+		FKR = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_singapore_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_singapore_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.14.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = fkr_news.14.b # 117.b
+		trigger = { TAG = FKR } 
+	}
+	option = {
+		name = fkr_news.14.c # 100.c
+		trigger = { TAG = ENG }
+	}
+}
+
+# The Fall of Pearl Harbor Original 118
+news_event = {
+	id = fkr_news.15
+	title = fkr_news.15.title
+	desc = fkr_news.15.desc
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		629 = { is_controlled_by = FKR }
+		629 = { is_owned_by = USA }
+		FKR = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_pearl_harbor_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_pearl_harbor_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.15.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = fkr_news.15.b # 117.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.15.c # 100.c
+		trigger = { TAG = USA }
+	}
+}
+
+# The Fall of Sydney Original 119
+news_event = {
+	id = fkr_news.16
+	title = fkr_news.16.title
+	desc = fkr_news.16.desc
+	picture = GFX_news_event_047
+	
+	major = yes
+	
+	trigger = {
+		285 = { is_controlled_by = FKR }
+		285 = { is_owned_by = AST }
+		FKR = { has_war_with = AST }
+		NOT = { has_global_flag = fall_of_sydney_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_sydney_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.16.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = AST
+			}
+		}
+	}
+	option = {
+		name = fkr_news.16.b # 117.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.16.c # 100.c
+		trigger = { TAG = AST }
+	}
+}
+
+# The Fall of Los Angeles Original 120
+news_event = {
+	id = fkr_news.17
+	title = fkr_news.17.title
+	desc = fkr_news.17.desc
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		378 = { is_controlled_by = FKR }
+		378 = { is_owned_by = USA }
+		FKR = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_los_angeles_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_los_angeles_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.17.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = fkr_news.17.b # 117.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.17.c # 100.c
+		trigger = { TAG = USA }
+	}
+}
+
+# The Fall of Vladivostok Original 122
+news_event = {
+	id = fkr_news.18
+	title = fkr_news.18.title
+	desc = fkr_news.18.desc
+	picture = GFX_news_event_050
+	
+	major = yes
+	
+	trigger = {
+		408 = { is_controlled_by = FKR }
+		408 = { is_owned_by = SOV }
+		FKR = { has_war_with = SOV }
+		NOT = { has_global_flag = fall_of_vladivostok_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_vladivostok_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.18.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = fkr_news.18.b # 117.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.18.c # 103.c
+		trigger = { TAG = SOV }
+	}
+}
+
+
+# The Fall of Manila Original 124
+news_event = {
+	id = fkr_news.19
+	title = fkr_news.19.title
+	desc = fkr_news.19.desc
+	picture = GFX_news_event_039
+	
+	major = yes
+	
+	trigger = {
+		327 = { is_controlled_by = FKR }
+		327 = { is_owned_by = PHI }
+		FKR = { has_war_with = PHI }
+		NOT = { has_global_flag = fall_of_manila_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_manila_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.19.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = PHI
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = fkr_news.19.b # 117.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.19.c # 100.c
+		trigger = { 
+			OR = {
+				TAG = PHI 
+				TAG = USA
+			}
+		}
+	}
+}
+
+# The Fall of New Delhi original 126
+news_event = {
+	id = fkr_news.20
+	title = fkr_news.20.title
+	desc = fkr_news.20.desc
+	picture = GFX_news_event_039
+	
+	major = yes
+	
+	trigger = {
+		439 = { is_controlled_by = FKR }
+		439 = { is_owned_by = ENG }
+		FKR = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_new_delhi_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_new_delhi_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.20.a # 145.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = fkr_news.20.b # 117.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.20.c # 100.c
+		trigger = { TAG = ENG }
+	}
+}
+
+# The Fall of the Panama Canal original 127
+news_event = {
+	id = fkr_news.21
+	title = fkr_news.21.title
+	desc = fkr_news.21.desc
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	trigger = {
+		685 = { is_controlled_by = FKR }
+		685 = { is_owned_by = USA }
+		FKR = { has_war_with = USA }
+		NOT = { has_global_flag = fall_of_panama_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_panama_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.21.a # 145
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = fkr_news.21.b # 117
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.21.c # 100
+		trigger = { TAG = USA }
+	}
+}
+
+# The Fall of Berlin (USA) original 128
+news_event = {
+	id = fkr_news.22
+	title = fkr_news.22.title
+	desc = fkr_news.22.desc
+	picture = GFX_news_event_german_reichstag_ruins
+	
+	major = yes
+	
+	trigger = {
+		64 = { is_controlled_by = FKR }
+		64 = { is_owned_by = GER }
+		FKR = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_berlin_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_berlin_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.22.a # 139
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = fkr_news.22.b # 128
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.22.c # 100
+		trigger = { TAG = GER }
+	}
+}
+
+# The Fall of Cairo (Germany) Original 109
+news_event = {
+	id = fkr_news.23
+	title = fkr_news.23.title
+	desc = fkr_news.23.desc
+	picture = GFX_news_event_042
+	
+	major = yes
+	
+	trigger = {
+		446 = { is_controlled_by = FKR }
+		446 = { is_owned_by = ENG }
+		FKR = { has_war_with = ENG }
+		NOT = { has_global_flag = fall_of_cairo_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_cairo_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.23.a # 145
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = fkr_news.23.b # 100
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.23.c # 100
+		trigger = { TAG = ENG }
+	}
+}
+
+# The Fall of Nanjing
+news_event = {
+	id = fkr_news.24
+	title = fkr_news.24.title
+	desc = fkr_news.24.desc
+	picture = GFX_news_event_048
+	
+	major = yes
+	
+	trigger = {
+		613 = { is_controlled_by = FKR }
+		613 = { is_owned_by = CHI }
+		FKR = { has_war_with = CHI }
+		NOT = { has_global_flag = fall_of_nanjing_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_nanjing_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.24.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = CHI
+			}
+		}
+	}
+	option = {
+		name = fkr_news.24.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.24.c
+		trigger = { TAG = CHI }
+	}
+}
+
+# The Fall of Seoul
+news_event = {
+	id = fkr_news.25
+	title = fkr_news.25.title
+	desc = fkr_news.25.desc
+	picture = GFX_news_event_fkr_capture_seoul
+	
+	major = yes
+	
+	trigger = {
+		525 = { is_controlled_by = FKR }
+		525 = { is_owned_by = KOR }
+		FKR = { has_war_with = KOR }
+		NOT = { has_global_flag = fall_of_seoul_fkr }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_seoul_fkr
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = fkr_news.25.a
+		trigger = {
+			NOT = {
+				TAG = FKR
+				TAG = KOR
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = fkr_news.25.b
+		trigger = { TAG = FKR }
+	}
+	option = {
+		name = fkr_news.25.c
+		trigger = { TAG = CHI }
+		trigger = { TAG = JAP }
+	}
+}
+
+news_event = { # The second spain civil war
+	id = fkr_news.26
+	title = fkr_news.26.title
+	desc = fkr_news.26.desc
+	picture = GFX_news_event_032
+	
+	major = yes
+
+	#Use one of trigger setting
+	is_triggered_only = yes
+
+	option = { # for other country
+		name = fkr_news.26.a
+		trigger = {
+			NOT = {
+				tag = FKR
+				original_tag = SPR
+			}
+		}
+	}
+
+	option = { # for korea
+		name = fkr_news.26.b
+		trigger = {
+			tag = FKR
+		}
+	}
+	
+}

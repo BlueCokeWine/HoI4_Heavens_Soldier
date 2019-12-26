@@ -1,0 +1,26 @@
+################### ANIMATION MOTORIZED + MECHANIZED #####################
+sound =
+{
+	name = "heli_unit_move_animation_01"
+	file = "animations/heli_unit_move_animation_01.wav"
+	always_load = no
+}
+sound =
+{
+	name = "heli_unit_move_animation_02"
+	file = "animations/heli_unit_move_animation_02.wav"
+	always_load = no
+}
+sound =
+{
+	name = "heli_unit_move_animation_03"
+	file = "animations/heli_unit_move_animation_03.wav"
+	always_load = no
+}
+
+sound =
+{
+	name = "heli_unit_idle_animation_01"
+	file = "animations/heli_unit_idle_animation_01.wav"
+	always_load = no
+}

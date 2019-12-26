@@ -1,0 +1,5067 @@
+focus_tree = {
+	id = future_korea_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FKR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 80 y = 80 }
+	focus = {
+		id = FKR_gather_information
+		icon = GFX_focus_prc_infiltration
+		cost = 1.00
+		x = 35
+		y = 0
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+			add_ideas = FKR_uncompromized_country_idea
+			every_state = {
+				limit = {
+					is_core_of = KOR
+				}
+				add_core_of = ROOT
+			}
+			country_event = fkr.60
+			hidden_effect = {
+				add_equipment_to_stockpile = {
+					type = mechanized_equipment_future_1
+					amount = 125
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = modern_tank_equipment_future_1
+					amount = 100
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = modern_tank_artillery_equipment_future_1
+					amount = 80
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment_1
+					amount = 58
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment_1
+					amount = 15
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_future_1
+					amount = 275
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = cv_fighter_equipment_future_1
+					amount = 50
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = cv_CAS_equipment_future_1
+					amount = 50
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = transport_heli_equipment_1
+					amount = 30
+					producer = FKR
+				}
+				add_equipment_to_stockpile = {
+					type = attack_heli_equipment_1
+					amount = 48
+					producer = FKR
+				}
+				division_template = {
+					name = "미래 기계화 보병 사단"
+					division_names_group = FKR_MEC_01
+					priority = 2
+					regiments = {
+						mechanized = {
+							x = 0
+							y = 0
+						}
+						mechanized = {
+							x = 0
+							y = 1
+						}
+						mechanized = {
+							x = 0
+							y = 2
+						}
+						mechanized = {
+							x = 1
+							y = 0
+						}
+						mechanized = {
+							x = 1
+							y = 1
+						}
+						modern_armor = {
+							x = 2
+							y = 0
+						}
+						modern_armor = {
+							x = 2
+							y = 1
+						}
+						modern_armor = {
+							x = 3
+							y = 0
+						}
+						modern_armor = {
+							x = 3
+							y = 1
+						}
+						modern_sp_artillery_brigade = {
+							x = 4
+							y = 0
+						}
+						modern_sp_artillery_brigade = {
+							x = 4
+							y = 1
+						}
+						modern_sp_artillery_brigade = {
+							x = 4
+							y = 2
+						}
+						modern_sp_artillery_brigade = {
+							x = 4
+							y = 3
+						}
+					}
+					support = {
+						engineer = {
+							x = 0
+							y = 0
+						}
+						recon = {
+							x = 0
+							y = 1
+						}
+						field_hospital = {
+							x = 0
+							y = 2
+						}
+						maintenance_company = {
+							x = 0
+							y = 3
+						}
+						logistics_company = {
+							x = 0
+							y = 4
+						}
+					}
+				}
+				division_template = {
+					name = "미래 강습 항공단"
+					division_names_group = FKR_PAR_01
+					priority = 2
+					regiments = {
+						transport_heli_infantry = {
+							x = 0
+							y = 0
+						}
+						transport_heli_infantry = {
+							x = 0
+							y = 1
+						}
+						attack_heli = {
+							x = 1
+							y = 0
+						}
+						attack_heli = {
+							x = 1
+							y = 1
+						}
+						attack_heli = {
+							x = 2
+							y = 0
+						}
+						attack_heli = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						maintenance_company = {
+							x = 0
+							y = 0
+						}
+						logistics_company = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 794 }
+					create_unit = {
+						division = "name = \"제 11 기계화 보병 사단 '화랑'\" division_template = \"미래 기계화 보병 사단\" start_experience_factor = 0.6"
+						owner = FKR
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 794 }
+					create_unit = {
+						division = "name = \"제 13 항공단\" division_template = \"미래 강습 항공단\" start_experience_factor = 0.8"
+						owner = FKR
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_contact_prov_gov
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_gather_information
+		}
+		x = 20
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_political_power = 150
+			add_stability = 0.05
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_independent_army
+		icon = GFX_focus_chi_army_reform
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_contact_prov_gov
+		}
+		x = 20
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_war_support = 0.1
+			custom_effect_tooltip = FKR_expansion_independent_army_tt
+			hidden_effect = {
+				create_field_marshal = {
+					name = "송 호성"
+					picture = "Portrait_general_song_hoseong.dds"
+					traits = { FKR_independent_army brilliant_strategist cavalry_officer offensive_doctrine trait_engineer }
+					skill = 5
+					attack_skill = 4
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 3
+				}
+				create_corps_commander = {
+					name = "김 홍일"
+					picture = "Portrait_general_kim_hongil.dds"
+					traits = { FKR_independent_army trickster hill_fighter }
+					skill = 5
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 3
+				}
+				create_corps_commander = {
+					name = "지 청천"
+					picture = "Portrait_general_ji_cheongcheon.dds"
+					traits = { FKR_independent_army brilliant_strategist career_officer infantry_officer trickster }
+					skill = 5
+					attack_skill = 5
+					defense_skill = 2
+					planning_skill = 2
+					logistics_skill = 3
+				}
+				create_corps_commander = {
+					name = "이 범석"
+					picture = "Portrait_general_lee_beomseok.dds"
+					traits = { FKR_independent_army inflexible_strategist trickster guerilla_fighter }
+					skill = 5
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 2
+					logistics_skill = 3
+				}
+				create_navy_leader = {
+					name = "손 원일"
+					picture = "Portrait_admiral_son_wonil.dds"
+					traits = { air_controller ironside superior_tactician }
+					skill = 5
+					attack_skill = 5
+					defense_skill = 3
+					maneuvering_skill = 4
+					coordination_skill = 4
+				}
+				division_template = {
+					name = "광복군 사단"
+					division_names_group = FKR_IDP_01
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+					}
+					support = {
+						recon = {
+							x = 0
+							y = 0
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 794 }
+					create_unit = {
+						division = "name = \"정예 광복군 사단\" division_template = \"광복군 사단\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"정예 광복군 사단\" division_template = \"광복군 사단\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"정예 광복군 사단\" division_template = \"광복군 사단\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"정예 광복군 사단\" division_template = \"광복군 사단\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"정예 광복군 사단\" division_template = \"광복군 사단\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"정예 광복군 사단\" division_template = \"광복군 사단\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_prepare_independent
+		icon = GFX_focus_secret_rearmament
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_gather_information
+		}
+		x = 22
+		y = 1
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_manpower = 54175
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 10000
+				producer = FKR
+			}
+			hidden_effect = {
+				KOR = {
+					add_timed_idea = {
+						idea = KOR_movement_of_independence_fighters
+						days = 365
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_support_motherland
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_prepare_independent
+		}
+		x = 22
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			unlock_decision_tooltip = FKR_prepare_to_seize_arms
+		}
+
+	}
+	focus = {
+		id = FKR_operation_gloryday
+		icon = GFX_focus_jap_cast_the_die
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_expansion_independent_army
+		}
+		prerequisite = {
+			focus = FKR_support_motherland
+		}
+		x = 21
+		y = 3
+		bypass = {
+			OR = {
+				FKR = {
+					owns_state = 525
+					owns_state = 527
+					owns_state = 788
+					owns_state = 790
+					owns_state = 789
+					owns_state = 791
+					owns_state = 792
+					owns_state = 793
+					owns_state = 794
+				}
+				has_war_with = KOR
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = FKR_uncompromized_country_idea
+				}
+				remove_ideas = FKR_uncompromized_country_idea
+			}
+			declare_war_on = {
+				target = KOR
+				type = annex_everything
+			}
+			hidden_effect = {
+				FKR = {
+					transfer_state = 790
+					transfer_state = 789
+				}
+				division_template = {
+					name = "의용 사단"
+					priority = 0
+					division_names_group = FKR_IDP_02
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 790 }
+					create_unit = {
+						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 789 }
+					create_unit = {
+						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+					create_unit = {
+						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.1"
+						owner = FKR
+					}
+				}
+			}
+			hidden_effect = {
+				KOR = {
+					country_event = kor.1
+				}
+			}
+			news_event = {
+				hours = 3
+				id = fkr_news.4
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_create_republic
+		icon = GFX_focus_rom_handle_king
+		cost = 2.00
+		prerequisite = {
+			focus = FKR_operation_gloryday
+		}
+		mutually_exclusive = {
+			focus = FKR_create_empire
+		}
+		x = 12
+		y = 4
+		available = {
+			FKR = {
+				owns_state = 525
+				owns_state = 527
+				owns_state = 788
+				owns_state = 790
+				owns_state = 789
+				owns_state = 791
+				owns_state = 792
+				owns_state = 793
+				owns_state = 794
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = fkr.10
+				hours = 6
+			}
+			add_ideas = FKR_for_peopole_idea
+			create_country_leader = {
+				name = "백범 김 구"
+				desc = ""
+				picture = "gfx/leaders/FKR/Portrait_leader_kim_gu.dds"
+				expire = "1999.1.1"
+				ideology = socialism
+				traits = { indomitable_perseverance }
+			}
+			create_country_leader = {
+				name = "의친왕 이 강"
+				desc = ""
+				picture = "gfx/leaders/FKR/Portrait_leader_lee_kang.dds"
+				expire = "1999.1.1"
+				ideology = fascism_ideology
+				traits = { imperial_connections }
+			}
+			create_country_leader = {
+				name = "몽양 여 운형"
+				desc = ""
+				picture = "gfx/leaders/FKR/Portrait_leader_yeo_woonhyung.dds"
+				expire = "1999.1.1"
+				ideology = anti_revisionism
+				traits = { triumphant_revolutionary }
+			}
+			create_country_leader = {
+				name = "영친왕 이 은"
+				desc = ""
+				picture = "gfx/leaders/FKR/Portrait_leader_lee_eun.dds"
+				expire = "1999.1.1"
+				ideology = despotism
+				traits = { inexperienced_imperialist }
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = FKR_late_democratic_party_long
+				name = FKR_late_democratic_party
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = FKR_late_fascism_party_long
+				name = FKR_late_fascism_party
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = FKR_late_communism_party_long
+				name = FKR_late_communism_party
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = FKR_late_neutrality_party_long
+				name = FKR_late_neutrality_party
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.4
+			}
+			hidden_effect = {
+				KOR = {
+					remove_state_core = 525
+					remove_state_core = 527
+					remove_state_core = 788
+					remove_state_core = 790
+					remove_state_core = 789
+					remove_state_core = 791
+					remove_state_core = 792
+					remove_state_core = 793
+					remove_state_core = 794
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_spirit_of_freedom
+		icon = GFX_goal_support_democracy
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_create_republic
+		}
+		mutually_exclusive = {
+			focus = FKR_for_the_worker
+		}
+		x = 7
+		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			add_stability = 0.2
+			add_political_power = 150
+			set_cosmetic_tag = FKR_UNIFIED
+		}
+
+	}
+	focus = {
+		id = FKR_asia_league
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_spirit_of_freedom
+		}
+		x = 4
+		y = 6
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			if = {
+				limit = {
+					FKR = {
+						is_in_faction = no
+					}
+				}
+				create_faction = FKR_asia_league_faction
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_affect_china
+		icon = GFX_focus_generic_china1
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_asia_league
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+			CHI = {
+				country_event = {
+					id = fkr.40
+					days = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_persuasion_warlord
+		icon = GFX_focus_chi_proclaim_rival_government
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_affect_china
+		}
+		x = 1
+		y = 8
+		completion_reward = {
+			if = {
+				limit = {
+					PRC = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					type = topple_government
+					target = PRC
+				}
+			}
+			if = {
+				limit = {
+					GXC = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					type = topple_government
+					target = GXC
+				}
+			}
+			if = {
+				limit = {
+					YUN = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					type = topple_government
+					target = YUN
+				}
+			}
+			if = {
+				limit = {
+					SHX = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					type = topple_government
+					target = SHX
+				}
+			}
+			if = {
+				limit = {
+					XSM = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					type = topple_government
+					target = XSM
+				}
+			}
+			if = {
+				limit = {
+					SIK = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}
+				create_wargoal = {
+					type = topple_government
+					target = SIK
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_affect_japan
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_asia_league
+		}
+		x = 5
+		y = 7
+		completion_reward = {
+			JAP = {
+				add_ideas = FKR_korea_democracy_idea
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_contact_allies
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_spirit_of_freedom
+		}
+		x = 10
+		y = 6
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			has_government = democratic
+			ENG = {
+				has_government = democratic
+			}
+		}
+		bypass = {
+			has_war_with = ENG
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					FKR = {
+						is_in_faction = yes
+					}
+				}
+				ENG = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = FKR_align_with_korea
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						is_faction_leader = yes
+						has_government = democratic
+					}
+				}
+				ENG = {
+					country_event = generic.2
+				}
+				ENG = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = FKR_align_with_korea
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					ENG = {
+						is_in_faction = yes
+						is_faction_leader = no
+						has_government = democratic
+					}
+				}
+				random_country = {
+					limit = {
+						is_in_faction_with = ENG
+						is_faction_leader = yes
+					}
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = FKR_align_with_korea
+					}
+					country_event = generic.2
+				}
+			}
+			else_if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				ENG = {
+					country_event = generic.5
+				}
+				ENG = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = FKR_align_with_korea
+					}
+				}
+			}
+			else = {
+				set_rule = {
+					can_create_factions = yes
+				}
+				create_faction = FKR_the_new_alliance
+				ENG = {
+					country_event = generic.5
+				}
+				ENG = {
+					add_opinion_modifier = {
+						target = ROOT
+						modifier = FKR_align_with_korea
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_passive_diplo
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_contact_allies
+		}
+		mutually_exclusive = {
+			focus = FKR_active_diplo
+		}
+		x = 9
+		y = 7
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_active_diplo
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_contact_allies
+		}
+		mutually_exclusive = {
+			focus = FKR_passive_diplo
+		}
+		x = 11
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = FKR_active_diplo_tt
+			hidden_effect = {
+				set_rule = {
+					can_only_justify_war_on_threat_country = no
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_for_the_worker
+		icon = GFX_goal_support_communism
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_create_republic
+		}
+		mutually_exclusive = {
+			focus = FKR_spirit_of_freedom
+		}
+		x = 17
+		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+			add_stability = 0.1
+			add_political_power = 300
+			set_cosmetic_tag = FKR_UNIFIED
+		}
+
+	}
+	focus = {
+		id = FKR_kor_style_communism
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_for_the_worker
+		}
+		mutually_exclusive = {
+			focus = FKR_asia_communism
+			focus = FKR_contact_Soviet_russia
+		}
+		x = 15
+		y = 6
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			add_ideas = FKR_kor_style_communism_idea
+		}
+
+	}
+	focus = {
+		id = FKR_manchu_liberate
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_kor_style_communism
+		}
+		x = 14
+		y = 7
+		available = {
+			MAN = {
+				exists = yes
+			}
+			NOT = {
+				has_war_with = MAN
+			}
+		}
+		completion_reward = {
+			MAN = {
+				country_event = {
+					id = fkr.80
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_contact_Soviet_russia
+		icon = GFX_focus_FKR_contact_Soviet_russia
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_for_the_worker
+		}
+		mutually_exclusive = {
+			focus = FKR_kor_style_communism
+			focus = FKR_asia_communism
+		}
+		x = 19
+		y = 6
+		available = {
+			has_government = communism
+			NOT = {
+				is_in_faction_with = SOV
+			}
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					SOV = {
+						is_faction_leader = yes
+						has_government = communism
+					}
+				}
+				SOV = {
+					country_event = generic.2
+				}
+			}
+			else_if = {
+				limit = {
+					SOV = {
+						is_in_faction = yes
+						is_faction_leader = no
+						has_government = communism
+					}
+				}
+				random_country = {
+					limit = {
+						is_in_faction_with = SOV
+						is_faction_leader = yes
+					}
+					country_event = generic.2
+				}
+			}
+			else_if = {
+				limit = {
+					is_faction_leader = yes
+				}
+				SOV = {
+					country_event = generic.5
+				}
+			}
+			else = {
+				set_rule = {
+					can_create_factions = yes
+				}
+				create_faction = FKR_the_new_international
+				SOV = {
+					country_event = generic.5
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_fall_of_fascism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_contact_Soviet_russia
+		}
+		x = 20
+		y = 7
+		bypass = {
+			OR = {
+				has_wargoal_against = GER
+				has_war_with = GER
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = GER
+					}
+					NOT = {
+						has_war_with = GER
+					}
+				}
+				create_wargoal = {
+					target = GER
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_create_empire
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 2.00
+		prerequisite = {
+			focus = FKR_operation_gloryday
+		}
+		mutually_exclusive = {
+			focus = FKR_create_republic
+		}
+		x = 30
+		y = 4
+		available = {
+			FKR = {
+				owns_state = 525
+				owns_state = 527
+				owns_state = 788
+				owns_state = 790
+				owns_state = 789
+				owns_state = 791
+				owns_state = 792
+				owns_state = 793
+				owns_state = 794
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = fkr.10
+				hours = 6
+			}
+			add_ideas = FKR_for_king_idea
+			create_country_leader = {
+				name = "백범 김 구"
+				desc = ""
+				picture = "gfx/leaders/FKR/Portrait_leader_kim_gu.dds"
+				expire = "1999.1.1"
+				ideology = socialism
+				traits = { indomitable_perseverance }
+			}
+			create_country_leader = {
+				name = "의친왕 이 강"
+				desc = ""
+				picture = "gfx/leaders/FKR/Portrait_leader_lee_kang.dds"
+				expire = "1999.1.1"
+				ideology = fascism_ideology
+				traits = { imperial_connections }
+			}
+			create_country_leader = {
+				name = "몽양 여 운형"
+				desc = ""
+				picture = "gfx/leaders/FKR/Portrait_leader_yeo_woonhyung.dds"
+				expire = "1999.1.1"
+				ideology = anti_revisionism
+				traits = { triumphant_revolutionary }
+			}
+			create_country_leader = {
+				name = "영친왕 이 은"
+				desc = ""
+				picture = "gfx/leaders/FKR/Portrait_leader_lee_eun.dds"
+				expire = "1999.1.1"
+				ideology = despotism
+				traits = { inexperienced_imperialist }
+			}
+			set_party_name = {
+				ideology = democratic
+				long_name = FKR_late_democratic_party_long
+				name = FKR_late_democratic_party
+			}
+			set_party_name = {
+				ideology = fascism
+				long_name = FKR_late_fascism_party_long
+				name = FKR_late_fascism_party
+			}
+			set_party_name = {
+				ideology = communism
+				long_name = FKR_late_communism_party_long
+				name = FKR_late_communism_party
+			}
+			set_party_name = {
+				ideology = neutrality
+				long_name = FKR_late_neutrality_party_long
+				name = FKR_late_neutrality_party
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.3
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.3
+			}
+			hidden_effect = {
+				KOR = {
+					remove_state_core = 525
+					remove_state_core = 527
+					remove_state_core = 788
+					remove_state_core = 790
+					remove_state_core = 789
+					remove_state_core = 791
+					remove_state_core = 792
+					remove_state_core = 793
+					remove_state_core = 794
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_return_of_emperor
+		icon = GFX_goal_support_fascism
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_create_empire
+		}
+		mutually_exclusive = {
+			focus = FKR_return_of_king
+		}
+		x = 25
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = FKR_return_of_emperor_tt
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.4
+			}
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			add_war_support = 0.2
+			add_stability = 0.1
+			set_cosmetic_tag = FKR_UNIFIED
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = FKR_return_of_emperor_faction
+		}
+
+	}
+	focus = {
+		id = FKR_pressure_manchuria
+		icon = GFX_focus_FKR_pressure_manchuria
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_return_of_emperor
+		}
+		x = 25
+		y = 6
+		available = {
+			has_army_manpower = {
+				size > 549999
+			}
+		}
+		cancel = {
+			OR = {
+				is_subject = yes
+				has_war_with = MAN
+			}
+		}
+		bypass = {
+			OR = {
+				MAN = {
+					OR = {
+						exists = no
+						has_war_with = FKR
+					}
+				}
+				FKR = {
+					owns_state = 716
+					owns_state = 745
+					owns_state = 328
+					owns_state = 717
+					owns_state = 610
+					owns_state = 715
+					owns_state = 714
+					owns_state = 761
+				}
+			}
+		}
+		completion_reward = {
+			army_experience = 10
+			MAN = {
+				country_event = {
+					id = fkr.49
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_ask_to_china
+		icon = GFX_focus_prc_remove_chiang_kai_shek
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_pressure_manchuria
+		}
+		x = 24
+		y = 7
+		available = {
+			is_subject = no
+			country_exists = CHI
+		}
+		bypass = {
+			CHI = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			CHI = {
+				country_event = {
+					id = fkr.56
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_removal_warlord
+		icon = GFX_focus_chi_one_china_policy
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_ask_to_china
+		}
+		x = 23
+		y = 8
+		bypass = {
+			OR = {
+				has_wargoal_against = GXC
+				has_war_with = GXC
+			}
+			OR = {
+				has_wargoal_against = YUN
+				has_war_with = YUN
+			}
+			OR = {
+				has_wargoal_against = SHX
+				has_war_with = SHX
+			}
+			OR = {
+				has_wargoal_against = XSM
+				has_war_with = XSM
+			}
+			OR = {
+				has_wargoal_against = SIK
+				has_war_with = SIK
+			}
+			OR = {
+				has_wargoal_against = PRC
+				has_war_with = PRC
+			}
+			OR = {
+				has_wargoal_against = TIB
+				has_war_with = TIB
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = GXC
+					}
+					NOT = {
+						has_war_with = GXC
+					}
+				}
+				create_wargoal = {
+					target = GXC
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = YUN
+					}
+					NOT = {
+						has_war_with = YUN
+					}
+				}
+				create_wargoal = {
+					target = YUN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = SHX
+					}
+					NOT = {
+						has_war_with = SHX
+					}
+				}
+				create_wargoal = {
+					target = SHX
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = XSM
+					}
+					NOT = {
+						has_war_with = XSM
+					}
+				}
+				create_wargoal = {
+					target = XSM
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = SIK
+					}
+					NOT = {
+						has_war_with = SIK
+					}
+				}
+				create_wargoal = {
+					target = SIK
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = PRC
+					}
+					NOT = {
+						has_war_with = PRC
+					}
+				}
+				create_wargoal = {
+					target = PRC
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = TIB
+					}
+					NOT = {
+						has_war_with = TIB
+					}
+				}
+				create_wargoal = {
+					target = TIB
+					type = annex_everything
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_ask_to_japan
+		icon = GFX_focus_AST_war_japan
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_pressure_manchuria
+		}
+		x = 26
+		y = 7
+		available = {
+			is_subject = no
+			country_exists = JAP
+		}
+		bypass = {
+			JAP = {
+				OR = {
+					exists = no
+					is_subject = yes
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			JAP = {
+				country_event = {
+					id = fkr.52
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_resource_war
+		icon = GFX_focus_jap_strike_south
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_ask_to_china
+			focus = FKR_ask_to_japan
+		}
+		x = 25
+		y = 8
+		bypass = {
+			OR = {
+				has_wargoal_against = INS
+				has_war_with = INS
+			}
+			OR = {
+				has_wargoal_against = MAL
+				has_war_with = MAL
+			}
+			OR = {
+				AND = {
+					671 = {
+						NOT = {
+							is_controlled_by = FRA
+						}
+					}
+					670 = {
+						NOT = {
+							is_controlled_by = FRA
+						}
+					}
+					286 = {
+						NOT = {
+							is_controlled_by = FRA
+						}
+					}
+					741 = {
+						NOT = {
+							is_controlled_by = FRA
+						}
+					}
+				}
+				has_wargoal_against = FRA
+				has_war_with = FRA
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = INS
+					}
+					NOT = {
+						has_war_with = INS
+					}
+				}
+				create_wargoal = {
+					target = INS
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = MAL
+					}
+					NOT = {
+						has_war_with = MAL
+					}
+				}
+				create_wargoal = {
+					target = MAL
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						671 = {
+							is_controlled_by = FRA
+						}
+						670 = {
+							is_controlled_by = FRA
+						}
+						286 = {
+							is_controlled_by = FRA
+						}
+						741 = {
+							is_controlled_by = FRA
+						}
+					}
+					NOT = {
+						has_wargoal_against = FRA
+					}
+					NOT = {
+						has_war_with = FRA
+					}
+				}
+				create_wargoal = {
+					target = FRA
+					type = take_state_focus
+					generator = { 671 670 286 741 }
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_attack_communism
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_resource_war
+		}
+		x = 24
+		y = 9
+		bypass = {
+			OR = {
+				has_wargoal_against = SOV
+				has_war_with = SOV
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = SOV
+					}
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				create_wargoal = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_attack_usa
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_resource_war
+		}
+		x = 26
+		y = 9
+		available = {
+		
+		}
+		bypass = {
+			has_war_with = USA
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = USA
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_ancient_korean_literature
+		icon = GFX_focus_AST_squander_bug
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_attack_communism
+		}
+		prerequisite = {
+			focus = FKR_attack_usa
+		}
+		x = 25
+		y = 10
+		completion_reward = {
+			custom_effect_tooltip = FKR_ancient_korean_literature_tt
+		}
+
+	}
+	focus = {
+		id = FKR_mexico_bridgehead
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_ask_to_japan
+		}
+		x = 27
+		y = 8
+		available = {
+			
+		}
+		completion_reward = {
+			MEX = {
+				country_event = fkr.91
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_spain_king_problem
+		icon = GFX_focus_rom_abdicate
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_create_empire
+		}
+		x = 30
+		y = 6
+		available = {
+			has_global_flag = spanish_civil_war
+			has_country_flag = FKR_accept_spain_king_exile_flag
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = FKR_spain_monarchist
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_spain_king_problem
+		}
+		x = 29
+		y = 7
+		available = {
+			any_other_country = {
+				original_tag = SPR
+				has_civil_war = no
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					original_tag = SPR
+				}
+				add_timed_idea = {
+					idea = FKR_support_spain_monarchy
+					days = 365
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_prepair_huge_volunteer
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_spain_king_problem
+		}
+		x = 31
+		y = 7
+		available = {
+			
+		}
+
+		completion_reward = {
+			set_rule = {
+				can_send_volunteers = yes
+			}
+			add_ideas = FKR_large_scale_dispatch
+		}
+
+	}
+	focus = {
+		id = FKR_portugal_diplomacy
+		icon = GFX_focus_generic_concessions
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_spain_monarchist
+		}
+		prerequisite = {
+			focus = FKR_prepair_huge_volunteer
+		}
+		x = 30
+		y = 8
+		available = {
+			
+		}
+		completion_reward = {
+			POR = {
+				country_event = fkr.101
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_2nd_spain_civil_war
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_portugal_diplomacy
+		}
+		x = 30
+		y = 9
+		available = {
+			any_other_country = {
+				original_tag = SPR
+				has_civil_war = no
+			}
+		}
+		completion_reward = {
+			every_country = {
+				limit = {
+					original_tag = SPR
+				}
+				country_event = fkr.105
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_destiny_of_spain
+		icon = GFX_focus_AST_rats_tobruk
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_2nd_spain_civil_war
+		}
+		x = 30
+		y = 10
+		available = {
+			any_other_country = {
+				original_tag = SPR
+				has_government = neutrality
+				has_civil_war = no
+			}
+			is_puppet = no
+		}
+		completion_reward = {
+			country_event = fkr.106
+		}
+
+	}
+	focus = {
+		id = FKR_strat_land_point
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_gather_information
+		}
+		x = 35
+		y = 1
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = FKR_develop_focus_tt
+		}
+
+	}
+	focus = {
+		id = FKR_makau
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_strat_land_point
+		}
+		x = 33
+		y = 2
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = FKR_develop_focus_tt
+		}
+
+	}
+	focus = {
+		id = FKR_return_of_king
+		icon = GFX_focus_hun_elect_a_king
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_create_empire
+		}
+		mutually_exclusive = {
+			focus = FKR_return_of_emperor
+		}
+		x = 35
+		y = 5
+		completion_reward = {
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			add_stability = 0.2
+			add_war_support = 0.1
+			set_cosmetic_tag = FKR_UNIFIED
+		}
+
+	}
+	focus = {
+		id = FKR_japan_denno
+		icon = GFX_focus_jap_showa_restoration
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_return_of_king
+		}
+		x = 33
+		y = 6
+		completion_reward = {
+			JAP = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_contact_korea_monarchist
+				}
+				country_event = {
+					id = fkr.11
+					days = 2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_hongkong
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_strat_land_point
+		}
+		x = 35
+		y = 2
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = FKR_develop_focus_tt
+		}
+
+	}
+	focus = {
+		id = FKR_qingdao
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_strat_land_point
+		}
+		x = 37
+		y = 2
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = FKR_develop_focus_tt
+		}
+
+	}
+	focus = {
+		id = FKR_trade_city_income
+		icon = GFX_focus_generic_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_hongkong
+			focus = FKR_qingdao
+			focus = FKR_makau
+		}
+		x = 35
+		y = 3
+		available = {
+			always = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = FKR_develop_focus_tt
+		}
+
+	}
+	focus = {
+		id = FKR_restoration_old_territory
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_return_of_king
+		}
+		x = 35
+		y = 6
+		completion_reward = {
+			716 = {
+				add_core_of = ROOT
+			}
+			745 = {
+				add_core_of = ROOT
+			}
+			328 = {
+				add_core_of = ROOT
+			}
+			717 = {
+				add_core_of = ROOT
+			}
+			610 = {
+				add_core_of = ROOT
+			}
+			715 = {
+				add_core_of = ROOT
+			}
+			714 = {
+				add_core_of = ROOT
+			}
+			761 = {
+				add_core_of = ROOT
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_qing_dynasty
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_return_of_king
+		}
+		x = 37
+		y = 6
+		completion_reward = {
+			MAN = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_contact_korea_monarchist
+				}
+				country_event = {
+					id = fkr.13
+					days = 2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_royal_society
+		icon = GFX_focus_rom_parties_end
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_restoration_old_territory
+		}
+		prerequisite = {
+			focus = FKR_qing_dynasty
+		}
+		prerequisite = {
+			focus = FKR_japan_denno
+		}
+		x = 35
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = FKR_royal_society_tt
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = FKR_royal_society_faction
+			if = {
+				limit = {
+					JAP = {
+						has_government = neutrality
+					}
+				}
+				JAP = {
+					country_event = {
+						id = fkr.31
+						days = 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					MAN = {
+						has_government = neutrality
+					}
+				}
+				MAN = {
+					country_event = {
+						id = fkr.33
+						days = 3
+					}
+				}
+			}
+			country_event = {
+				id = fkr.82
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_new_entente
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_royal_society
+		}
+		mutually_exclusive = {
+			focus = FKR_new_central
+		}
+		x = 34
+		y = 8
+		available = {
+			has_global_flag = FKR_entente_faction_flag
+		}
+		bypass = {
+			has_global_flag = FKR_entente_faction_flag
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = FKR_bourbon_house
+		icon = GFX_focus_FKR_bourbon_house
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_new_entente
+		}
+		x = 33
+		y = 9
+		completion_reward = {
+			FRA = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_contact_korea_monarchist
+				}
+				country_event = {
+					id = fkr.15
+					days = 2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_new_central
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_royal_society
+		}
+		mutually_exclusive = {
+			focus = FKR_new_entente
+		}
+		x = 36
+		y = 8
+		available = {
+			has_global_flag = FKR_central_faction_flag
+		}
+		bypass = {
+			has_global_flag = FKR_central_faction_flag
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = FKR_roma
+		icon = GFX_focus_FKR_roma
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_new_entente
+			focus = FKR_new_central
+		}
+		x = 35
+		y = 9
+		completion_reward = {
+			ITA = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_contact_korea_monarchist
+				}
+				country_event = {
+					id = fkr.17
+					days = 2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_tzar
+		icon = GFX_focus_FKR_tzar
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_roma
+		}
+		x = 35
+		y = 10
+		completion_reward = {
+			SOV = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_contact_korea_monarchist
+				}
+				country_event = {
+					id = fkr.21
+					days = 2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_kaiserreich
+		icon = GFX_focus_FKR_kaiserreich
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_new_central
+		}
+		x = 37
+		y = 9
+		completion_reward = {
+			GER = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_contact_korea_monarchist
+				}
+				country_event = {
+					id = fkr.23
+					days = 2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_austria_hungary
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_kaiserreich
+		}
+		x = 37
+		y = 10
+		available = {
+
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = AUS
+					country_exists = HUN
+				}
+				country_event = {
+					id = fkr.83
+				}
+			}
+			if = {
+				limit = {
+					country_exists = AUS
+					NOT = {
+						country_exists = HUN
+					}
+				}
+				AUS = {
+					country_event = {
+						id = fkr.84
+					}
+				}
+			}
+			if = {
+				limit = {
+					country_exists = HUN
+					NOT = {
+						country_exists = AUS
+					}
+				}
+				HUN = {
+					country_event = {
+						id = fkr.85
+					}
+				}
+			}
+			custom_effect_tooltip = FKR_austria_hungary_tt
+		}
+
+	}
+	focus = {
+		id = FKR_carrier_remodeling
+		icon = GFX_goal_continuous_naval_production
+		cost = 2.00
+		prerequisite = {
+			focus = FKR_gather_information
+		}
+		x = 51
+		y = 1
+		available = {
+			FKR = {
+				has_full_control_of_state = 794
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+			794 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 5
+			}
+			794 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_develop_jeju
+		icon = GFX_focus_FKR_develop_jeju
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_carrier_remodeling
+		}
+		x = 43
+		y = 2
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		available = {
+			FKR = {
+				has_full_control_of_state = 794
+			}
+		}
+		completion_reward = {
+			794 = {
+				add_extra_state_shared_building_slots = 14
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = fuel_silo
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_national_reconstruction
+		icon = GFX_focus_generic_industry_2
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_develop_jeju
+		}
+		x = 43
+		y = 3
+		available = {
+			FKR = {
+				owns_state = 525
+				owns_state = 527
+				owns_state = 788
+				owns_state = 790
+				owns_state = 789
+				owns_state = 791
+				owns_state = 792
+				owns_state = 793
+				owns_state = 794
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 40
+			add_building_construction = {
+				type = industrial_complex
+				level = 15
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 15
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 10
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = FKR_rebuild_the_nation
+				days = 365
+			}
+			525 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			527 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			788 = {
+				add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			790 = {
+				add_extra_state_shared_building_slots = 8
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
+			}
+			789 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			791 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			792 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			793 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_dockyard_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_national_reconstruction
+		}
+		x = 40
+		y = 4
+		available_if_capitulated = yes
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = naval_effort_built
+					}
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = naval_effort_built
+					}
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = {
+							tag = ROOT
+						}
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_heavy_industry_1
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_national_reconstruction
+		}
+		x = 42
+		y = 4
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_heavy_industry_1_AF_1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_heavy_industry_1_AF_2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_heavy_industry_1_AF_3
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_heavy_industry_1_AF_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_heavy_industry_1_AF_2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_heavy_industry_1_AF_3
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_light_industry_1
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_national_reconstruction
+		}
+		x = 44
+		y = 4
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_light_industry_1_IC_1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_light_industry_1_IC_2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_light_industry_1_IC_3
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_light_industry_1_IC_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_light_industry_1_IC_2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_light_industry_1_IC_3
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_harmony_of_industry
+		icon = GFX_focus_generic_industry_3
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_expansion_heavy_industry_1
+		}
+		prerequisite = {
+			focus = FKR_expansion_light_industry_1
+		}
+		x = 43
+		y = 5
+		ai_will_do = {
+			factor = 8
+		}
+		completion_reward = {
+			add_ideas = FKR_industrial_harmony
+		}
+
+	}
+	focus = {
+		id = FKR_human_resource_development
+		icon = GFX_focus_generic_military_academy
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_harmony_of_industry
+		}
+		x = 43
+		y = 8
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = FKR_focus_electro_tech
+		icon = GFX_goal_generic_radar
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_human_resource_development
+		}
+		x = 43
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FKR_strategic_information_management_of_future
+			add_tech_bonus = {
+				name = FKR_focus_electro_tech
+				bonus = 0.5
+				uses = 5
+				category = electronics
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_light_industry_2
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_expansion_light_industry_1
+		}
+		x = 44
+		y = 6
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_light_industry_2_IC_1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_light_industry_2_IC_2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_light_industry_2_IC_3
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_light_industry_2_IC_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_light_industry_2_IC_2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_light_industry_2_IC_3
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_develop_resource
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_national_reconstruction
+		}
+		x = 46
+		y = 4
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_develop_resource
+				bonus = 0.5
+				uses = 1
+				category = excavation_tech
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_rumor_of_oil
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_develop_resource
+		}
+		x = 46
+		y = 5
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = excavation1
+				}
+				add_tech_bonus = {
+					name = FKR_rumor_of_oil
+					bonus = 0.5
+					uses = 1
+					category = excavation_tech
+				}
+			}
+			else = {
+				set_technology = {
+					excavation1 = 1
+				}
+			}
+			unlock_decision_tooltip = FKR_develop_sinuiju_oil_deposits
+		}
+
+	}
+	focus = {
+		id = FKR_sector_7
+		icon = GFX_goal_generic_oil_refinery
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_rumor_of_oil
+		}
+		x = 46
+		y = 6
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = excavation2
+				}
+				add_tech_bonus = {
+					name = FKR_sector_7
+					bonus = 0.5
+					uses = 1
+					category = excavation_tech
+				}
+			}
+			else = {
+				set_technology = {
+					excavation2 = 1
+				}
+			}
+			unlock_decision_tooltip = FKR_develop_sector_7_oil_deposits
+		}
+
+	}
+	focus = {
+		id = FKR_economy_resource
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_sector_7
+		}
+		prerequisite = {
+			focus = FKR_expansion_light_industry_2
+		}
+		mutually_exclusive = {
+			focus = FKR_war_resource
+		}
+		x = 45
+		y = 7
+		completion_reward = {
+			add_ideas = FKR_economy_resource_idea
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_reserchteam
+		icon = GFX_focus_research
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_carrier_remodeling
+		}
+		x = 58
+		y = 2
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = FKR_industrial_company
+		icon = GFX_goal_generic_construction
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_expansion_reserchteam
+		}
+		x = 51
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = fkr_available_industry_company_tt
+			show_ideas_tooltip = doosan_industry
+			show_ideas_tooltip = sk_industry
+			show_ideas_tooltip = hanwha_industry
+		}
+
+	}
+	focus = {
+		id = FKR_materiel_company
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_expansion_reserchteam
+		}
+		x = 53
+		y = 3
+		completion_reward = {
+			custom_effect_tooltip = fkr_available_materiel_company_tt
+			show_ideas_tooltip = snt_motive
+			show_ideas_tooltip = dasan_machinery
+			show_ideas_tooltip = kia_motors
+			show_ideas_tooltip = lg_innotek
+			show_ideas_tooltip = imperial_arsenal
+		}
+
+	}
+	focus = {
+		id = FKR_aircraft_company
+		icon = GFX_goal_generic_build_airforce
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_industrial_company
+		}
+		prerequisite = {
+			focus = FKR_materiel_company
+		}
+		x = 52
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = fkr_available_aircraft_company_tt
+			show_ideas_tooltip = korean_air
+			show_ideas_tooltip = asiana_airlines
+			show_ideas_tooltip = daewoo_heavy_industry
+			show_ideas_tooltip = lig_nex1
+			show_ideas_tooltip = korea_aerospace_industries
+		}
+
+	}
+	focus = {
+		id = FKR_tank_company
+		icon = GFX_goal_generic_build_tank
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_industrial_company
+		}
+		prerequisite = {
+			focus = FKR_materiel_company
+		}
+		x = 50
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = fkr_available_tank_company_tt
+			show_ideas_tooltip = sinjeong_development
+			show_ideas_tooltip = hyundai_heavy_industry
+			show_ideas_tooltip = samsung_techwin
+		}
+
+	}
+	focus = {
+		id = FKR_naval_company
+		icon = GFX_goal_generic_build_navy
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_materiel_company
+		}
+		prerequisite = {
+			focus = FKR_industrial_company
+		}
+		x = 54
+		y = 4
+		completion_reward = {
+			custom_effect_tooltip = fkr_available_naval_company_tt
+			show_ideas_tooltip = daewoo_shipbuilding_marine_engineering
+			show_ideas_tooltip = ssanyong_heavy_industry
+		}
+
+	}
+	focus = {
+		id = FKR_send_researcher
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_tank_company
+		}
+		prerequisite = {
+			focus = FKR_aircraft_company
+		}
+		prerequisite = {
+			focus = FKR_naval_company
+		}
+		x = 52
+		y = 5
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+			custom_effect_tooltip = FKR_send_researcher_tt
+		}
+
+	}
+	focus = {
+		id = FKR_focus_on_current_tech
+		icon = GFX_focus_research2
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_send_researcher
+		}
+		mutually_exclusive = {
+			focus = FKR_focus_on_future_tech
+		}
+		x = 51
+		y = 6
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = FKR_focus_on_future_tech
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_send_researcher
+		}
+		mutually_exclusive = {
+			focus = FKR_focus_on_current_tech
+		}
+		x = 53
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = FKR_focus_on_future_tech_tt
+			add_ideas = FKR_focus_on_future_tech_idea
+		}
+
+	}
+	focus = {
+		id = FKR_doctrine_department
+		icon = GFX_focus_generic_military_mission
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_expansion_reserchteam
+		}
+		x = 64
+		y = 3
+		completion_reward = {
+			add_ideas = FKR_doctrine_department_idea
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.5
+				uses = 3
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = air_doc_bonus
+				bonus = 0.5
+				uses = 3
+				category = air_doctrine
+			}
+			add_tech_bonus = {
+				name = naval_doc_bonus
+				bonus = 0.5
+				uses = 3
+				category = naval_doctrine
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_army_doc_team
+		icon = GFX_goal_generic_army_doctrines
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_doctrine_department
+		}
+		x = 58
+		y = 4
+		completion_reward = {
+			FKR = {
+				country_event = fkr.3
+			}
+			custom_effect_tooltip = FKR_army_doc_team_tt
+		}
+
+	}
+	focus = {
+		id = FKR_focus_small_arms
+		icon = GFX_goal_generic_small_arms
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_army_doc_team
+		}
+		x = 56
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_small_arms
+				bonus = 0.5
+				uses = 3
+				category = infantry_weapons
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_support_equipment
+		icon = GFX_goal_generic_production2
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_army_doc_team
+		}
+		x = 58
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_support_equipment
+				bonus = 0.5
+				uses = 5
+				category = engineers_tech
+				category = recon_tech
+				category = military_police_tech
+				category = hospital_tech
+				category = logistics_tech
+				category = signal_company_tech
+				category = maintenance_company_tech
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_support_equipment
+		}
+		prerequisite = {
+			focus = FKR_focus_small_arms
+		}
+		x = 57
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_artillery
+				bonus = 0.5
+				uses = 3
+				category = artillery
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_mobile_vehicle
+		icon = GFX_goal_generic_army_motorized
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_army_doc_team
+		}
+		x = 60
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_mobile_vehicle
+				bonus = 0.5
+				uses = 3
+				category = cat_mechanized_equipment
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_tank
+		icon = GFX_goal_generic_army_tanks
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_mobile_vehicle
+		}
+		prerequisite = {
+			focus = FKR_focus_support_equipment
+		}
+		x = 59
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_tank
+				bonus = 0.5
+				uses = 3
+				category = armor
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_additional_army_doc
+		icon = GFX_goal_generic_army_doctrines
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_focus_artillery
+			focus = FKR_focus_tank
+		}
+		x = 58
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = FKR_additional_army_doc_tt
+		}
+
+	}
+	focus = {
+		id = FKR_navy_doc_team
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_doctrine_department
+		}
+		x = 64
+		y = 4
+		completion_reward = {
+			FKR = {
+				country_event = fkr.4
+			}
+			custom_effect_tooltip = FKR_navy_doc_team_tt
+		}
+
+	}
+	focus = {
+		id = FKR_focus_destroyer
+		icon = GFX_goal_generic_navy_anti_submarine
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_navy_doc_team
+		}
+		x = 62
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_destroyer
+				bonus = 0.5
+				uses = 2
+				category = dd_tech
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_battleship
+		icon = GFX_goal_generic_navy_battleship
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_destroyer
+		}
+		x = 63
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_battleship
+				bonus = 0.5
+				uses = 4
+				category = bb_tech
+				category = bc_tech
+				category = shbb_tech
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_submarine
+		icon = GFX_goal_generic_navy_submarine
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_navy_doc_team
+		}
+		x = 64
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_submarine
+				bonus = 0.5
+				uses = 2
+				category = ss_tech
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_cruiser
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_navy_doc_team
+		}
+		x = 66
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_cruiser
+				bonus = 0.5
+				uses = 4
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_carrier
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_cruiser
+		}
+		x = 65
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_carrier
+				bonus = 0.5
+				uses = 2
+				category = cv_tech
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_additional_navy_doc
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_focus_battleship
+			focus = FKR_focus_carrier
+			focus = FKR_focus_submarine
+		}
+		x = 64
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = FKR_additional_navy_doc_tt
+		}
+
+	}
+	focus = {
+		id = FKR_airforce_team
+		icon = GFX_goal_generic_air_doctrine
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_doctrine_department
+		}
+		x = 70
+		y = 4
+		completion_reward = {
+			FKR = {
+				country_event = fkr.5
+			}
+			custom_effect_tooltip = FKR_airforce_team_tt
+		}
+
+	}
+	focus = {
+		id = FKR_focus_fighter
+		icon = GFX_goal_generic_air_fighter2
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_airforce_team
+		}
+		x = 70
+		y = 5
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_fighter
+				bonus = 0.5
+				uses = 2
+				category = light_fighter
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_navy_bomber
+		icon = GFX_goal_generic_air_naval_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_fighter
+		}
+		x = 67
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_navy_bomber
+				bonus = 0.5
+				uses = 2
+				category = naval_bomber
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_CAS
+		icon = GFX_goal_generic_air_fighter
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_fighter
+		}
+		x = 69
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_CAS
+				bonus = 0.5
+				uses = 2
+				category = cas_bomber
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_tactical_bomber
+		icon = GFX_goal_generic_air_bomber
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_fighter
+		}
+		x = 71
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_tactical_bomber
+				bonus = 0.5
+				uses = 4
+				category = tactical_bomber
+				category = cat_heavy_fighter
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_straegy_bomber
+		icon = GFX_goal_generic_CAS
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_fighter
+		}
+		x = 73
+		y = 6
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_straegy_bomber
+				bonus = 0.5
+				uses = 2
+				category = cat_strategic_bomber
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_additional_airforce_doc
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_focus_CAS
+			focus = FKR_focus_tactical_bomber
+			focus = FKR_focus_straegy_bomber
+			focus = FKR_focus_navy_bomber
+		}
+		x = 70
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = FKR_additional_airforce_doc_tt
+		}
+
+	}
+	focus = {
+		id = FKR_Establishing_Strat_Ops_Comm
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_additional_army_doc
+		}
+		prerequisite = {
+			focus = FKR_additional_navy_doc
+		}
+		prerequisite = {
+			focus = FKR_additional_airforce_doc
+		}
+		x = 64
+		y = 8
+		available = {
+			has_war = yes
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FKR_establishing_strat_ops_idea
+		}
+
+	}
+	focus = {
+		id = FKR_asia_communism
+		icon = GFX_focus_ger_great_red_menace
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_for_the_worker
+		}
+		mutually_exclusive = {
+			focus = FKR_kor_style_communism
+			focus = FKR_contact_Soviet_russia
+		}
+		x = 17
+		y = 6
+		completion_reward = {
+			set_rule = {
+				can_create_factions = yes
+			}
+			create_faction = FKR_asia_communism_faction
+			add_ideas = FKR_asia_communism_idea
+		}
+
+	}
+	focus = {
+		id = FKR_focus_roketry
+		icon = GFX_focus_rocketry
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_human_resource_development
+		}
+		x = 41
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FKR_rocketry_idea
+			add_tech_bonus = {
+				name = FKR_focus_roketry
+				bonus = 0.5
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = FKR_focus_roketry
+				bonus = 0.5
+				uses = 2
+				category = jet_technology
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_focus_atomic
+		icon = GFX_focus_wonderweapons
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_human_resource_development
+		}
+		x = 45
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = FKR_focus_atomic
+				bonus = 0.75
+				uses = 2
+				category = nuclear
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_support_japan_civilwar
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_affect_japan
+		}
+		x = 7
+		y = 8
+		bypass = {
+			JAP = {
+				exists = yes
+				has_government = democratic
+			}
+		}
+		completion_reward = {
+			hidden_effect = {
+				JAP = {
+					add_popularity = {
+						ideology = democratic
+						popularity = 0.1
+					}
+					start_civil_war = {
+						ideology = democratic
+						size = 0.5
+					}
+				}
+			}
+			custom_effect_tooltip = FKR_support_japan_civilwar_tt
+			news_event = fkr_news.6
+		}
+
+	}
+	focus = {
+		id = FKR_protect_manchu
+		icon = GFX_focus_jap_manchurian_project
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_affect_japan
+		}
+		x = 5
+		y = 8
+		bypass = {
+			OR = {
+				has_wargoal_against = MAN
+				has_war_with = MAN
+				MAN = {
+					has_government = democratic
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = MAN
+					}
+					NOT = {
+						has_war_with = MAN
+					}
+				}
+				create_wargoal = {
+					target = MAN
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_red_threat
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_protect_manchu
+		}
+		prerequisite = {
+			focus = FKR_req_colony_independent
+		}
+		x = 4
+		y = 9
+		bypass = {
+			OR = {
+				has_wargoal_against = SOV
+				has_war_with = SOV
+				SOV = {
+					has_government = democratic
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = SOV
+					}
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				create_wargoal = {
+					target = SOV
+					type = topple_government
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_req_colony_independent
+		icon = GFX_focus_generic_self_management
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_affect_china
+		}
+		x = 3
+		y = 8
+		completion_reward = {
+			unlock_decision_category_tooltip = FKR_asia_guardian
+		}
+
+	}
+	focus = {
+		id = FKR_support_comm_china
+		icon = GFX_focus_prc_maoism
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_kor_style_communism
+			focus = FKR_asia_communism
+			focus = FKR_contact_Soviet_russia
+		}
+		x = 16
+		y = 7
+		completion_reward = {
+			if = {
+				limit = {
+					FKR = {
+						is_in_faction = no
+					}
+				}
+				create_faction = FKR_asia_communism_faction
+			}
+			PRC = {
+				country_event = fkr.97
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_overthrow_imperialism
+		icon = GFX_focus_generic_japanese_imperial_glory
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_asia_communism
+			focus = FKR_contact_Soviet_russia
+			focus = FKR_kor_style_communism
+		}
+		x = 18
+		y = 7
+		bypass = {
+			JAP = {
+				OR = {
+					exists = no
+					has_war_with = FKR
+					NOT = {
+						has_government = fascism
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAP
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_red_road_of_asia
+		icon = GFX_focus_FKR_red_road_of_asia
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_support_comm_china
+		}
+		x = 15
+		y = 8
+		completion_reward = {
+			unlock_decision_category_tooltip = FKR_red_road_of_asia_cat
+		}
+
+	}
+	focus = {
+		id = FKR_red_america
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_overthrow_imperialism
+		}
+		x = 19
+		y = 8
+		completion_reward = {
+			random_country = {
+				limit = {
+					original_tag = MEX
+				}
+				add_ideas = FKR_korea_communism_idea
+			}
+			random_country = {
+				limit = {
+					original_tag = CUB
+				}
+				add_ideas = FKR_korea_communism_idea
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_fall_of_capialism
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_red_america
+		}
+		x = 18
+		y = 9
+		bypass = {
+			OR = {
+				has_wargoal_against = USA
+				has_war_with = USA
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = USA
+					}
+					NOT = {
+						has_war_with = USA
+					}
+				}
+				create_wargoal = {
+					target = USA
+					type = puppet_wargoal_focus
+				}
+			}
+			MEX = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_red_america
+				}
+			}
+			CUB = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_red_america
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_fall_of_royal_house
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_red_road_of_asia
+		}
+		x = 16
+		y = 9
+		bypass = {
+			OR = {
+				has_wargoal_against = ENG
+				has_war_with = ENG
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_wargoal_against = ENG
+					}
+					NOT = {
+						has_war_with = ENG
+					}
+				}
+				create_wargoal = {
+					target = ENG
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_time_to_reaching_top
+		icon = GFX_focus_ger_reichskommisariats
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_ancient_korean_literature
+		}
+		x = 25
+		y = 11
+		completion_reward = {
+			custom_effect_tooltip = FKR_time_to_reaching_top_tt
+		}
+
+	}
+	focus = {
+		id = FKR_great_britain
+		icon = GFX_focus_FKR_great_britain
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_bourbon_house
+		}
+		x = 33
+		y = 10
+		completion_reward = {
+			ENG = {
+				add_opinion_modifier = {
+					target = FKR
+					modifier = FKR_contact_korea_monarchist
+				}
+				country_event = {
+					id = fkr.19
+					days = 2
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_imperialism
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_tzar
+			focus = FKR_austria_hungary
+			focus = FKR_great_britain
+		}
+		x = 35
+		y = 11
+		completion_reward = {
+			add_ideas = FKR_imperialism_idea
+		}
+
+	}
+	focus = {
+		id = FKR_power_of_labor
+		icon = GFX_focus_FKR_power_of_labor
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_fall_of_capialism
+		}
+		prerequisite = {
+			focus = FKR_fall_of_royal_house
+		}
+		x = 17
+		y = 10
+		completion_reward = {
+			add_ideas = FKR_power_of_labor_idea
+		}
+
+	}
+	focus = {
+		id = FKR_missionary_of_freedom
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_red_threat
+		}
+		prerequisite = {
+			focus = FKR_destroy_fascism
+		}
+		x = 7
+		y = 10
+		completion_reward = {
+			custom_effect_tooltip = FKR_missionary_of_freedom_tt
+			add_ideas = FKR_missionary_of_freedom_idea
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_heavy_industry_2
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_expansion_heavy_industry_1
+		}
+		x = 42
+		y = 6
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_heavy_industry_2_AF_1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_heavy_industry_2_AF_2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = FKR_expansion_heavy_industry_2_AF_3
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_heavy_industry_2_AF_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_heavy_industry_2_AF_2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = PREV
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = FKR_expansion_heavy_industry_2_AF_3
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_dockyard_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_expansion_dockyard_1
+		}
+		x = 40
+		y = 5
+		available_if_capitulated = yes
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = naval_effort_built
+					}
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = naval_effort_built
+					}
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = {
+							tag = ROOT
+						}
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_expansion_dockyard_3
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_expansion_dockyard_2
+		}
+		x = 40
+		y = 6
+		available_if_capitulated = yes
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						any_owned_state = {
+							dockyard > 0
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+					any_owned_state = {
+						is_coastal = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						is_coastal = yes
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = naval_effort_built
+					}
+					any_owned_state = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						dockyard > 0
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+				set_country_flag = naval_effort_built
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = naval_effort_built
+					}
+					NOT = {
+						any_owned_state = {
+							free_building_slots = {
+								building = dockyard
+								size > 2
+								include_locked = yes
+							}
+						}
+					}
+				}
+				random_state = {
+					limit = {
+						controller = {
+							tag = ROOT
+						}
+						free_building_slots = {
+							building = dockyard
+							size > 2
+							include_locked = yes
+						}
+					}
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = dockyard
+						level = 3
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_research_institute
+		icon = GFX_goal_continuous_research
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_focus_on_current_tech
+		}
+		x = 51
+		y = 7
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+
+	}
+	focus = {
+		id = FKR_inventor_mind
+		icon = GFX_focus_FKR_inventor_mind
+		cost = 5.00
+		prerequisite = {
+			focus = FKR_research_institute
+		}
+		x = 51
+		y = 8
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = FKR_inventor_mind_idea
+		}
+
+	}
+	focus = {
+		id = FKR_Chemical_Weapon
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_Establishing_Strat_Ops_Comm
+		}
+		x = 63
+		y = 9
+		completion_reward = {
+			custom_effect_tooltip = FKR_Chemical_Weapon_tt
+		}
+
+	}
+	focus = {
+		id = FKR_3_nation_guarantee
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_passive_diplo
+		}
+		x = 9
+		y = 8
+		available = {
+			any_country = {
+				original_tag = ENG
+				has_government = democratic
+			}
+			any_country = {
+				original_tag = FRA
+				has_government = democratic
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = ENG
+				has_war_with = FRA
+			}
+		}
+		bypass = {
+			custom_trigger_tooltip = {
+				tooltip = FKR_sign_tripartite_pact_bypass_tt
+				OR = {
+					NOT = {
+						any_country = {
+							original_tag = ENG
+							has_government = democratic
+						}
+					}
+					any_country = {
+						original_tag = ENG
+						has_government = democratic
+						has_war_with = ROOT
+					}
+					NOT = {
+						any_country = {
+							original_tag = FRA
+							has_government = democratic
+						}
+					}
+					any_country = {
+						original_tag = FRA
+						has_government = democratic
+						has_war_with = ROOT
+					}
+				}
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+
+		}
+		completion_reward = {
+			random_country = {
+				limit = {
+					original_tag = ENG
+					has_government = democratic
+				}
+				country_event = {
+					id = fkr.71
+					days = 1
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_support_america
+		icon = GFX_focus_chi_mission_to_the_us
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_active_diplo
+		}
+		x = 11
+		y = 8
+		available = {
+			any_country = {
+				original_tag = USA
+				has_government = democratic
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		bypass = {
+			OR = {
+				NOT = {
+					any_country = {
+						original_tag = USA
+						has_government = democratic
+					}
+				}
+				any_country = {
+					original_tag = USA
+					has_government = democratic
+					has_war_with = ROOT
+				}
+				NOT = {
+					any_country = {
+						original_tag = USA
+						has_government = democratic
+						has_idea = great_depression
+					}
+				}
+				has_war_with = USA
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = fkr.76
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_destroy_fascism
+		icon = GFX_focus_ger_oppose_hitler
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_3_nation_guarantee
+			focus = FKR_support_america
+		}
+		x = 10
+		y = 9
+		completion_reward = {
+			if = {
+				limit = {
+					GER = {
+						has_government = fascism
+					}
+				}
+				create_wargoal = {
+					type = topple_government
+					target = GER
+				}
+			}
+			if = {
+				limit = {
+					ITA = {
+						has_government = fascism
+					}
+				}
+				create_wargoal = {
+					type = topple_government
+					target = ITA
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_comm_faction_research
+		icon = GFX_focus_generic_socialist_science
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_support_comm_china
+			focus = FKR_overthrow_imperialism
+		}
+		x = 17
+		y = 8
+		completion_reward = {
+			add_to_tech_sharing_group = FKR_comm_faction_research_tech_group
+			every_country = {
+				limit = {
+					is_in_faction_with = ROOT
+				}
+				add_to_tech_sharing_group = FKR_comm_faction_research_tech_group
+			}
+		}
+
+	}
+	focus = {
+		id = FKR_united_earth_gov
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_power_of_labor
+			focus = FKR_missionary_of_freedom
+		}
+		x = 12
+		y = 11
+		available = {
+			is_subject = no
+			OR = {
+				NOT = {
+					country_exists = GER
+				}
+				GER = {
+					is_puppet_of = FKR
+				}
+			}
+			OR = {
+				NOT = {
+					country_exists = ITA
+				}
+				ITA = {
+					is_puppet_of = FKR
+				}
+			}
+			OR = {
+				NOT = {
+					country_exists = SOV
+				}
+				SOV = {
+					is_puppet_of = FKR
+				}
+			}
+			OR = {
+				NOT = {
+					country_exists = ENG
+				}
+				ENG = {
+					is_puppet_of = FKR
+				}
+			}
+			OR = {
+				NOT = {
+					country_exists = FRA
+				}
+				FRA = {
+					is_puppet_of = FKR
+				}
+			}
+			OR = {
+				NOT = {
+					country_exists = USA
+				}
+				USA = {
+					is_puppet_of = FKR
+				}
+			}
+			OR = {
+				NOT = {
+					country_exists = JAP
+				}
+				JAP = {
+					is_puppet_of = FKR
+				}
+			}
+		}
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			custom_effect_tooltip = FKR_united_earth_gov_tt
+		}
+
+	}
+	focus = {
+		id = FKR_war_resource
+		icon = GFX_goal_generic_trade
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_expansion_dockyard_3
+		}
+		prerequisite = {
+			focus = FKR_expansion_heavy_industry_2
+		}
+		mutually_exclusive = {
+			focus = FKR_economy_resource
+		}
+		x = 41
+		y = 7
+		completion_reward = {
+			add_ideas = FKR_war_resource_idea
+		}
+
+	}
+	focus = {
+		id = FKR_chopper_develop
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10.00
+		prerequisite = {
+			focus = FKR_Establishing_Strat_Ops_Comm
+		}
+		x = 65
+		y = 9
+
+		completion_reward = {
+			custom_effect_tooltip = FKR_chopper_develop_tt
+		}
+
+	}
+}
