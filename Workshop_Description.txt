@@ -2,6 +2,7 @@
 
 [b]호환 가능 버전 : 1.9.1[/b]
 [b]모드 업데이트 로그는 스크린샷 상단의 '변경 내역'을 눌러 확인해주세요![/b]
+[b]Github 링크: https://github.com/BlueCokeWine/HoI4_Heavens_Soldier[/b]
 
 This version is for Korean!
 
