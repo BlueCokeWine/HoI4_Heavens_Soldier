@@ -324,7 +324,7 @@ ideas = {
 			modifier = {
 				non_core_manpower = 0.10
 				army_org_Factor = 0.10
-				enemy_partisan_effect = -0.25
+				resistance_damage_to_garrison = -0.25
 			}
 		}
 
@@ -367,7 +367,7 @@ ideas = {
 				convoy_raiding_efficiency_factor = 0.30
 				navy_submarine_attack_factor = 0.3
 				navy_submarine_defence_factor = 0.3
-				naval_torpedo_range_factor = 1
+				naval_torpedo_screen_penetration_factor = 0.25
 			}
 		}
 
@@ -387,7 +387,6 @@ ideas = {
 				sortie_efficiency = 0.2
 				navy_carrier_air_targetting_factor = 0.10
 				navy_carrier_air_attack_factor = 0.05
-				navy_carrier_air_targetting_factor 0.05
 				navy_carrier_air_agility_factor = 0.08
 			}
 		}
@@ -1050,6 +1049,8 @@ ideas = {
 	# MILITARY
 	theorist = {
 		chae_byungdeok_theorist = {
+			ledger = army
+
 			picture = fkr_theorist_chae_byungdeok
 			allowed = {
 				original_tag = FKR
@@ -1062,11 +1063,13 @@ ideas = {
 				}
 			}
 			research_bonus = {
-				land_doctrine = 0.10
+				land_doctrine = 0.15
 			}
 			traits = { superior_firepower_expert }
 		}
 		choi_yongdeok_theorist = {
+			ledger = air
+
 			picture = fkr_theorist_choi_yongdeok
 			allowed = {
 				original_tag = FKR
@@ -1076,12 +1079,15 @@ ideas = {
 				has_completed_focus = FKR_expansion_independent_army
 			}
 			research_bonus = {
-				cat_battlefield_support = 0.10
+				cat_battlefield_support = 0.15
 			}
 			traits = { dive_bomber }
 		}
 		jung_ilkwon_theorist = {
+			ledger = army
+
 			picture = fkr_theorist_jung_ilkwon
+
 			allowed = {
 				original_tag = FKR
 			}
@@ -1089,11 +1095,13 @@ ideas = {
 				has_completed_focus = FKR_expansion_independent_army
 			}
 			research_bonus = {
-				land_doctrine = 0.07
+				land_doctrine = 0.10
 			}
 			traits = { blitzkrieg_theorist }
 		}
 		jung_keungmo_theorist = {
+			ledger = navy
+
 			picture = fkr_theorist_jung_keungmo
 			allowed = {
 				original_tag = FKR
@@ -1103,11 +1111,13 @@ ideas = {
 				has_completed_focus = FKR_expansion_independent_army
 			}
 			research_bonus = {
-				cat_trade_interdiction = 0.10
+				cat_trade_interdiction = 0.15
 			}
 			traits = { submarine_specialist }
 		}
 		lee_seunggi = {
+			ledger = air
+
 			picture = fkr_theorist_lee_seunggi
 			allowed = {
 				original_tag = FKR
@@ -1116,11 +1126,13 @@ ideas = {
 				has_completed_focus = FKR_human_resource_development
 			}
 			research_bonus = {
-				rocketry = 0.10
+				rocketry = 0.15
 			}
 			traits = { rocket_scientist }
 		}
 		son_wonil_theorist = {
+			ledger = navy
+
 			picture = fkr_theorist_son_wonil
 			allowed = {
 				original_tag = FKR
@@ -1130,11 +1142,13 @@ ideas = {
 				has_completed_focus = FKR_expansion_independent_army
 			}
 			research_bonus = {
-				cat_base_strike = 0.10
+				cat_base_strike = 0.15
 			}
 			traits = { naval_aviation_pioneer }
 		}
 		yoon_ilseon = {
+			ledger = army
+
 			picture = fkr_theorist_yoon_ilseon
 			allowed = {
 				original_tag = FKR
@@ -1143,7 +1157,7 @@ ideas = {
 				has_completed_focus = FKR_human_resource_development
 			}
 			research_bonus = {
-				nuclear = 0.10
+				nuclear = 0.15
 			}
 			traits = { nuclear_scientist }
 		}
@@ -1307,6 +1321,8 @@ ideas = {
 	
 	high_command = {
 		baek_suhnyeop = {
+			ledger = army
+
 			picture = fkr_highcommand_baek_suhnyeop
 			allowed = {
 				original_tag = FKR
@@ -1320,6 +1336,8 @@ ideas = {
 			traits = { army_cavalry_3 }
 		}
 		chae_byungdeok_high_command = {
+			ledger = army
+
 			picture = fkr_highcommand_chae_byungdeok
 			allowed = {
 				original_tag = FKR
@@ -1333,6 +1351,8 @@ ideas = {
 			traits = { army_regrouping_3 army_entrenchment_2 }
 		}
 		choi_yongdeok_high_command = {
+			ledger = air
+
 			picture = fkr_highcommand_choi_yongdeok
 			allowed = {
 				original_tag = FKR
@@ -1343,6 +1363,8 @@ ideas = {
 			traits = { air_tactical_bombing_3 air_strategic_bombing_2 }
 		}
 		jang_deokchang_high_command = {
+			ledger = air
+
 			picture = fkr_highcommand_jang_deokchang
 			allowed = {
 				original_tag = FKR
@@ -1356,6 +1378,8 @@ ideas = {
 			traits = { air_naval_strike_3 }
 		}
 		jeong_keungmo = {
+			ledger = navy
+
 			picture = fkr_highcommand_jeong_keungmo
 			allowed = {
 				original_tag = FKR
@@ -1369,6 +1393,8 @@ ideas = {
 			traits = { navy_screen_3 navy_submarine_2 }
 		}
 		ji_cheongcheon = {
+			ledger = army
+
 			picture = fkr_highcommand_ji_cheongcheon
 			allowed = {
 				original_tag = FKR
@@ -1379,6 +1405,8 @@ ideas = {
 			traits = { army_infantry_3 }
 		}
 		jung_ilkwon_high_command = {
+			ledger = army
+
 			picture = fkr_highcommand_jung_ilkwon
 			allowed = {
 				original_tag = FKR
@@ -1392,6 +1420,8 @@ ideas = {
 			traits = { army_armored_3 }
 		}
 		kim_jeongryeol = {
+			ledger = air
+
 			picture = fkr_highcommand_kim_jeongryeol
 			allowed = {
 				original_tag = FKR
@@ -1405,6 +1435,8 @@ ideas = {
 			traits = { air_air_superiority_3 }
 		}
 		kim_jongoh = {
+			ledger = army
+
 			picture = fkr_highcommand_kim_jongoh
 			allowed = {
 				original_tag = FKR
@@ -1418,6 +1450,8 @@ ideas = {
 			traits = { army_commando_3 army_logistics_1 }
 		}
 		lee_beomseok = {
+			ledger = army
+
 			picture = fkr_highcommand_lee_beomseok
 			allowed = {
 				original_tag = FKR
@@ -1428,6 +1462,8 @@ ideas = {
 			traits = { army_artillery_3 }
 		}
 		lee_hyungkeun = {
+			ledger = army
+
 			picture = fkr_highcommand_lee_hyungkeun
 			allowed = {
 				original_tag = FKR
@@ -1441,6 +1477,8 @@ ideas = {
 			traits = { army_concealment_3 army_logistics_2 }
 		}
 		park_okgyu_high_command = {
+			ledger = navy
+
 			picture = fkr_highcommand_park_okgyu
 			allowed = {
 				original_tag = FKR
@@ -1454,6 +1492,8 @@ ideas = {
 			traits = { navy_capital_ship_3 navy_naval_air_defense_2 }
 		}
 		park_wonseok_high_command = {
+			ledger = air
+
 			picture = fkr_highcommand_park_wonseok
 			allowed = {
 				original_tag = FKR
@@ -1467,6 +1507,8 @@ ideas = {
 			traits = { air_air_combat_training_3 air_bomber_interception_2 }
 		}
 		son_wonil_high_command = {
+			ledger = navy
+
 			picture = fkr_highcommand_son_wonil
 			allowed = {
 				original_tag = FKR

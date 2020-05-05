@@ -86,6 +86,8 @@ ideas = {
 	# MILITARY
 	theorist = {
 		itagaki_seisiro = {
+			ledger = army
+
 			picture = kor_theorist_itagaki_seisiro
 			allowed = {
 				original_tag = KOR
@@ -125,6 +127,8 @@ ideas = {
 	}	
 	high_command = {
 		shibusawa_eichi = {
+			ledger = army
+
 			picture = kor_highcommand_shibusawa_eichi
 			allowed = {
 				original_tag = KOR

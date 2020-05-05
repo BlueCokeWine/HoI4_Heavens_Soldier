@@ -1,11 +1,9 @@
-﻿[h1]Version Update : 19.11.16[/h1]
+﻿[h1]Version Update : 2020.05.05[/h1]
 
-[b]호환 가능 버전 : 1.8[/b]
+[b]호환 가능 버전 : 1.9.1[/b]
 [b]모드 업데이트 로그는 스크린샷 상단의 '변경 내역'을 눌러 확인해주세요![/b]
 
 This version is for Korean!
-
-ENG version : https://steamcommunity.com/sharedfiles/filedetails/?id=1562302994
 
 [h1]Q. So. what is this mod?[/h1]
 A. This mode is an alternative historical scenario of story in which Korea in the modern future has returned with superior technology to 1936 year history. It is very fantasy-minded and fiction.
