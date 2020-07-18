@@ -509,6 +509,7 @@ FKR_ancient_korean_literature_category = {
 			controls_state = 595
 			controls_state = 749
 			controls_state = 596
+			controls_state = 592
 		}
 
 		complete_effect = {
@@ -561,6 +562,7 @@ FKR_ancient_korean_literature_category = {
 			595	 = { add_core_of = ROOT }
 			749	 = { add_core_of = ROOT }
 			596	 = { add_core_of = ROOT }
+			592	 = { add_core_of = ROOT }
 			set_country_flag = FKR_china_cored
 		}
 	}

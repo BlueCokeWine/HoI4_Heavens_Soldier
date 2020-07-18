@@ -3777,6 +3777,9 @@ country_event = { # mexico want america old territory
 
 	trigger = {
 		has_country_flag = FKR_mexico_accepted_suggestion_flag
+		FKR = {
+			NOT = { has_war_with = USA }
+		}
 		OR = {
 			FKR = {
 				controls_state = 378
@@ -4201,7 +4204,6 @@ country_event = {
 					ideology = neutrality
 					size = 0.5
 					capital = 41
-					states = { 41 165 167 168 172 173 175 }
 				}
 			}
 			else_if = {
@@ -4213,7 +4215,6 @@ country_event = {
 					ideology = neutrality
 					size = 0.5
 					capital = 41
-					states = { 41 165 167 168 172 173 175 }
 				}
 			}
 			else = {
@@ -4222,7 +4223,6 @@ country_event = {
 					ideology = neutrality
 					size = 0.5
 					capital = 41
-					states = { 41 165 167 168 172 173 175 }
 				}
 			}
 			
