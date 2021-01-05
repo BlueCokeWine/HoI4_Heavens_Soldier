@@ -1,0 +1,25 @@
+state={
+	id=811
+	name="STATE_811"
+	
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			11915 5 
+		}
+		add_core_of = KOR
+	}
+
+	provinces={
+		1003 4107 7070 7155 9981 10065 11915 12040 
+	}
+
+	manpower=1239532
+	buildings_max_level_factor=1.000
+	state_category=city
+}

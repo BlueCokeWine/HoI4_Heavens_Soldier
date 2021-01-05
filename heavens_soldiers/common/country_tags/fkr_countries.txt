@@ -1,0 +1,1 @@
+FKR = "countries/FutureKorea.txt"

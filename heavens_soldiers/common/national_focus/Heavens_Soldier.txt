@@ -203,14 +203,14 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					prioritize = { 803 }
+					prioritize = { 813 }
 					create_unit = {
 						division = "name = \"제 11 기계화 보병 사단 '화랑'\" division_template = \"미래 기계화 보병 사단\" start_experience_factor = 0.6"
 						owner = FKR
 					}
 				}
 				random_owned_controlled_state = {
-					prioritize = { 803 }
+					prioritize = { 813 }
 					create_unit = {
 						division = "name = \"제 13 항공단\" division_template = \"미래 강습 항공단\" start_experience_factor = 0.8"
 						owner = FKR
@@ -341,7 +341,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					prioritize = { 803 }
+					prioritize = { 813 }
 					create_unit = {
 						division = "name = \"정예 광복군 사단\" division_template = \"광복군 사단\" start_experience_factor = 0.5 start_equipment_factor = 0.1"
 						owner = FKR
@@ -435,13 +435,13 @@ focus_tree = {
 				FKR = {
 					owns_state = 525
 					owns_state = 527
-					owns_state = 797
-					owns_state = 799
-					owns_state = 798
-					owns_state = 800
-					owns_state = 801
-					owns_state = 802
-					owns_state = 803
+					owns_state = 807
+					owns_state = 809
+					owns_state = 808
+					owns_state = 810
+					owns_state = 811
+					owns_state = 812
+					owns_state = 813
 				}
 				has_war_with = KOR
 			}
@@ -465,8 +465,8 @@ focus_tree = {
 			}
 			hidden_effect = {
 				FKR = {
-					transfer_state = 799
-					transfer_state = 798
+					transfer_state = 809
+					transfer_state = 808
 				}
 				division_template = {
 					name = "의용 사단"
@@ -492,7 +492,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					prioritize = { 799 }
+					prioritize = { 809 }
 					create_unit = {
 						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.1"
 						owner = FKR
@@ -507,7 +507,7 @@ focus_tree = {
 					}
 				}
 				random_owned_controlled_state = {
-					prioritize = { 798 }
+					prioritize = { 808 }
 					create_unit = {
 						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.1"
 						owner = FKR
@@ -550,13 +550,13 @@ focus_tree = {
 			FKR = {
 				owns_state = 525
 				owns_state = 527
-				owns_state = 797
-				owns_state = 799
-				owns_state = 798
-				owns_state = 800
-				owns_state = 801
-				owns_state = 802
-				owns_state = 803
+				owns_state = 807
+				owns_state = 809
+				owns_state = 808
+				owns_state = 810
+				owns_state = 811
+				owns_state = 812
+				owns_state = 813
 			}
 		}
 		completion_reward = {
@@ -625,13 +625,13 @@ focus_tree = {
 				KOR = {
 					remove_state_core = 525
 					remove_state_core = 527
-					remove_state_core = 797
-					remove_state_core = 799
-					remove_state_core = 798
-					remove_state_core = 800
-					remove_state_core = 801
-					remove_state_core = 802
-					remove_state_core = 803
+					remove_state_core = 807
+					remove_state_core = 809
+					remove_state_core = 808
+					remove_state_core = 810
+					remove_state_core = 811
+					remove_state_core = 812
+					remove_state_core = 813
 				}
 			}
 		}
@@ -1161,13 +1161,13 @@ focus_tree = {
 			FKR = {
 				owns_state = 525
 				owns_state = 527
-				owns_state = 797
-				owns_state = 799
-				owns_state = 798
-				owns_state = 800
-				owns_state = 801
-				owns_state = 802
-				owns_state = 803
+				owns_state = 807
+				owns_state = 809
+				owns_state = 808
+				owns_state = 810
+				owns_state = 811
+				owns_state = 812
+				owns_state = 813
 			}
 		}
 		completion_reward = {
@@ -1240,13 +1240,13 @@ focus_tree = {
 				KOR = {
 					remove_state_core = 525
 					remove_state_core = 527
-					remove_state_core = 797
-					remove_state_core = 799
-					remove_state_core = 798
-					remove_state_core = 800
-					remove_state_core = 801
-					remove_state_core = 802
-					remove_state_core = 803
+					remove_state_core = 807
+					remove_state_core = 809
+					remove_state_core = 808
+					remove_state_core = 810
+					remove_state_core = 811
+					remove_state_core = 812
+					remove_state_core = 813
 				}
 			}
 		}
@@ -2256,14 +2256,14 @@ focus_tree = {
 		y = 1
 		available = {
 			FKR = {
-				has_full_control_of_state = 803
+				has_full_control_of_state = 813
 			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		complete_tooltip = {
-			803 = {
+			813 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -2280,7 +2280,7 @@ focus_tree = {
 				type = arms_factory
 				level = 5
 			}
-			803 = {
+			813 = {
 				add_building_construction = {
 					type = air_base
 					level = 1
@@ -2304,11 +2304,11 @@ focus_tree = {
 		available_if_capitulated = no
 		available = {
 			FKR = {
-				has_full_control_of_state = 803
+				has_full_control_of_state = 813
 			}
 		}
 		completion_reward = {
-			803 = {
+			813 = {
 				add_extra_state_shared_building_slots = 14
 				add_building_construction = {
 					type = industrial_complex
@@ -2347,13 +2347,13 @@ focus_tree = {
 			FKR = {
 				owns_state = 525
 				owns_state = 527
-				owns_state = 797
-				owns_state = 799
-				owns_state = 798
-				owns_state = 800
-				owns_state = 801
-				owns_state = 802
-				owns_state = 803
+				owns_state = 807
+				owns_state = 809
+				owns_state = 808
+				owns_state = 810
+				owns_state = 811
+				owns_state = 812
+				owns_state = 813
 			}
 		}
 		complete_tooltip = {
@@ -2405,7 +2405,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			797 = {
+			807 = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
@@ -2423,7 +2423,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			799 = {
+			809 = {
 				add_extra_state_shared_building_slots = 8
 				add_building_construction = {
 					type = industrial_complex
@@ -2441,7 +2441,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			798 = {
+			808 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -2459,7 +2459,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			800 = {
+			810 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -2477,7 +2477,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			801 = {
+			811 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
@@ -2495,7 +2495,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			802 = {
+			812 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
