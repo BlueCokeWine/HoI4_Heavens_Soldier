@@ -1,4 +1,4 @@
-version="1.10.3"
+version="1.11.*"
 tags={
 	"Alternative History"
 	"Map"
@@ -6,5 +6,5 @@ tags={
 	"Graphics"
 }
 name="Korea - The Heavens Soldiers"
-supported_version="1.10.3"
+supported_version="1.11.*"
 remote_file_id="1444324047"
