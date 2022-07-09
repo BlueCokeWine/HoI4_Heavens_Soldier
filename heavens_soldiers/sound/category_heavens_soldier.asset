@@ -20,3 +20,25 @@ category = {
  }
 }
 
+category = {
+ name = "Battle"
+ soundeffects = {
+	distance_mechanized_units_mg_fire
+	distance_airplane_idle
+	distance_airplane_light_fire
+	distance_airplane_crash
+	distance_airplane_medium_idle_01
+	distance_airplane_heavy_idle_01
+	distance_super_heavy_battleship_destroyed
+ }
+ compressor = 
+ {
+	enabled = yes
+	pregain = 4.0
+	postgain = 1.5
+	ratio = 10.0
+	threshold = -9.0
+	attacktime = 0.03
+	releasetime = 0.0
+ }
+}
