@@ -221,7 +221,7 @@ country_event = {
 
 	immediate = {
 		FKR = {
-			set_capital = 525
+			set_capital = { state = 525 }
 			country_event = { id = fkr.37 days = 2 }
 		}
 	}
@@ -2423,8 +2423,8 @@ country_event = { # rise at the korea 1
 
 	immediate = {
 		FKR = {
-			set_state_controller = 810
-			set_state_controller = 807
+			set_state_controller = 838
+			set_state_controller = 835
 			division_template = {
                     name = "의용 사단"
                     priority = 0
@@ -2450,7 +2450,7 @@ country_event = { # rise at the korea 1
 				}
 
 				random_owned_controlled_state = {
-					prioritize = { 810 }
+					prioritize = { 838 }
 					create_unit = {
 						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.25"
 						owner = FKR
@@ -2500,7 +2500,7 @@ country_event = { # rise at the korea 2
 	immediate = {
 		FKR = { 
 			set_state_controller = 525
-			set_state_controller = 811
+			set_state_controller = 839
 			division_template = {
                     name = "의용 사단"
                     priority = 0
@@ -2546,7 +2546,7 @@ country_event = { # rise at the korea 2
 				}
 
 				random_owned_controlled_state = {
-					prioritize = { 811 }
+					prioritize = { 839 }
 					create_unit = {
 						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.5"
 						owner = FKR
@@ -2584,7 +2584,7 @@ country_event = { # rise at the korea 3
 	immediate = {
 		FKR = {
 			set_state_controller = 527
-			set_state_controller = 812
+			set_state_controller = 840
 			set_country_flag = FKR_rising_ended
 			division_template = {
                     name = "의용 사단"
@@ -2635,7 +2635,7 @@ country_event = { # rise at the korea 3
 				}
 
 				random_owned_controlled_state = {
-					prioritize = { 812 }
+					prioritize = { 840 }
 					create_unit = {
 						division = "name = \"지역 의용군\" division_template = \"의용 사단\" start_experience_factor = 0.0 start_equipment_factor = 0.75"
 						owner = FKR
@@ -4194,7 +4194,7 @@ country_event = {
 	option = {
 		name = fkr.105.a
 		hidden_effect = {
-			set_capital = 176
+			set_capital = { state = 176 }
 			if = {
 				limit = {
 					has_government = communism

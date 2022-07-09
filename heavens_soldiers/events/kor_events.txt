@@ -43,7 +43,7 @@ country_event = {
 				owner = PREV
 			}
 		}
-		807 = {
+		835 = {
 			create_unit = { 
 				division = "name = \"8. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
 				owner = PREV
@@ -53,7 +53,7 @@ country_event = {
 				owner = PREV
 			}
 		}
-		810 = {
+		838 = {
 			create_unit = { 
 				division = "name = \"10. Korea Conscription Regiment\" division_template = \"Korea Conscription Regiment\" start_experience_factor = 0" 
 				owner = PREV

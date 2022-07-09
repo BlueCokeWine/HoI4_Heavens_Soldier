@@ -1,25 +1,25 @@
 state={
-	id=808
-	name="STATE_808"
+	id=835
+	name="STATE_835"
 
 	history={
 		owner = KOR
 		buildings = {
-			infrastructure = 4
+			infrastructure = 5
 			arms_factory = 2
 			industrial_complex = 2
 		}
 		victory_points = {
-			13236 5 
+			13237 10
 		}
 		add_core_of = KOR
 	}
 
 	provinces={
-		4126 10110 11948 11977 12085 13236 
+		1100 7175 7204 11992 13237 
 	}
-
-	manpower=1558938
+	
+	manpower=1654373
 	buildings_max_level_factor=1.000
 	state_category=city
 }

@@ -241,14 +241,12 @@ ideas = {
 
 			picture = generic_army_war_college
 
-			research_bonus = {
-				land_doctrine = 0.10
-				air_doctrine = 0.10
-				naval_doctrine = 0.10
-			}
 
 			modifier = {
 				max_command_power = 50
+				land_doctrine_cost_factor = -0.10
+				air_doctrine_cost_factor = -0.10
+				naval_doctrine_cost_factor = -0.10
 				experience_gain_army = 0.05
 				experience_gain_air = 0.05
 				experience_gain_navy = 0.05
