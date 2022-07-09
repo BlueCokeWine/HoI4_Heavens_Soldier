@@ -1,6 +1,6 @@
 state={
-	id=809
-	name="STATE_809"
+	id=837
+	name="STATE_837"
 	history={
 		owner = KOR
 		add_core_of = KOR
